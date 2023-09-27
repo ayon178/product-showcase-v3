@@ -11,7 +11,7 @@ const Navbar = () => {
 
   useEffect(() => {
     gsap.from(refMobile.current, {
-      xPercent: -100,
+      xPercent: -150,
     })
   }, [])
 

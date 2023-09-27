@@ -96,7 +96,7 @@ export default function SwiperAutoSlider() {
               className={`slide-${index} relative h-full flex items-center justify-center`}
             >
               <div className="mt-5 md:flex container mx-auto ps-5 md:ps-10 items-center justify-between">
-                <div className="w-full md:w-[50%]">
+                <div className="w-full md:w-[50%] overflow-hidden">
                   <Image
                     src={item.image}
                     alt="Royal Melbourne Hospital"
