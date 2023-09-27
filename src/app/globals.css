@@ -8,8 +8,8 @@
   height: calc(100vh + .2rem);
   background-image: linear-gradient(
       to left,
-      rgba(82, 53, 160, 0.05),
-      rgba(82, 53, 160, 1)
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.05)
     ),
     url('../assets/slider.JPG');
   background-size: cover;

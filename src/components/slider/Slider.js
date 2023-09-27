@@ -96,7 +96,7 @@ export default function SwiperAutoSlider() {
               className={`slide-${index} relative h-full flex items-center justify-center`}
             >
               <div className="mt-5 md:flex container mx-auto ps-5 md:ps-10 items-center justify-between">
-                <div className="w-full md:w-[45%]">
+                <div className="w-full md:w-[50%]">
                   <Image
                     src={item.image}
                     alt="Royal Melbourne Hospital"
@@ -105,24 +105,19 @@ export default function SwiperAutoSlider() {
                     className="py-1"
                   />
                 </div>
-                <div className="w-full md:w-[45%] mt-5 md:mt-0">
-                  <div className="text-white text-2xl md:text-3xl text-left slide-header font-bold">
-                    Offering you the best{' '}
-                    <span className="text-secondaryText">healthcare</span>
-                    <br /> by{' '}
-                    <span className="text-secondaryText">
-                      dedicated doctors
-                    </span>{' '}
-                    in world class hospitals
-                    <br /> with advanced treatments and modern equipment.
-                  </div>
-                  <p className="text-white mt-10 w-[95%] md:w-[50%] font-semibold text-left slide-text text-[.9rem]">
-                    Your journey with us will be comfortable and transparent.
-                    <br /> The health of our clients both physical and mental,
-                    is our priority.
+                {/* Text container */}
+                <div className="w-full md:w-[50%] mt-10 md:mt-0 flex flex-col justify-start md:justify-end pr-0 md:pr-10">
+                  <h1 className="text-white text-2xl md:text-5xl text-center md:text-right slide-header font-bold">
+                    Text Writeup
+                  </h1>
+                  <p className="text-white mt-10 font-semibold text-center md:text-right slide-text text-[.9rem] w-full ml-auto md:w-3/4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Accusantium nemo nihil nobis eveniet ullam, earum dolorem
+                    corporis! Quod unde debitis voluptate cumque cum atque
+                    deleniti, voluptas laboriosam ipsam et aut!
                   </p>
-                  <button className="bg-white slide-text px-4 py-2 rounded-md mt-4 text-primary text-sm font-semibold">
-                    Register Now
+                  <button className="bg-primary slide-text px-4 py-2 w-36 mr-auto md:mr-0 ml-auto rounded-sm mt-4 text-primaryText text-sm font-semibold">
+                    Call to Order
                   </button>
                 </div>
               </div>
