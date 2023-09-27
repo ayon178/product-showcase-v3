@@ -8,10 +8,20 @@ import { useEffect } from 'react'
 export default function Home() {
   useEffect(() => {
     const navbar = document.querySelector('#navbar')
+    const text = document.querySelectorAll('.text_color')
     const timeline = gsap.timeline({ paused: true })
 
     timeline.to(navbar, {
-      backgroundColor: 'red',
+      // backgroundColor: 'red',
+      backdropFilter: 'blur(10px)',
+      duration: 0.1,
+      ease: 'power3.inOut',
+      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    })
+
+    timeline.to(text, {
+      color: '#fff',
+      ease: 'power3.inOut',
     })
 
     const scrollListener = () => {

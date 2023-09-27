@@ -57,7 +57,7 @@ const Navbar = () => {
       <div className="z-50 container  px-4 md:px-10 py-0 mx-auto flex flex-row justify-between">
         <Link
           href="/#"
-          className="font-semibold text-2xl text-primaryText flex items-center"
+          className="text_color font-semibold text-2xl text-primaryText flex items-center"
         >
           {/* <Image
           src={logo}
@@ -69,7 +69,7 @@ const Navbar = () => {
 
           <h1>LOGO</h1>
         </Link>
-        <ul className="flex-row items-center gap-9 text-sm font-semibold text-primaryText hidden md:flex">
+        <ul className="text_color flex-row items-center gap-9 text-sm font-semibold text-primaryText hidden md:flex">
           <li>
             <Link
               href="/#"
