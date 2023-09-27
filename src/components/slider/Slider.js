@@ -74,7 +74,7 @@ export default function SwiperAutoSlider() {
   }, [])
 
   return (
-    <>
+  
       <Swiper
         ref={swiperRef}
         spaceBetween={30}
@@ -125,6 +125,6 @@ export default function SwiperAutoSlider() {
           </SwiperSlide>
         ))}
       </Swiper>
-    </>
+  
   )
 }

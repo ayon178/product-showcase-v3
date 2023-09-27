@@ -1,5 +1,6 @@
 'use client'
 
+import Market from '@/components/market/Market'
 import Navbar from '@/components/shared/Navbar'
 import SwiperAutoSlider from '@/components/slider/Slider'
 import gsap from 'gsap'
@@ -44,6 +45,7 @@ export default function Home() {
       <Navbar />
       <main>
         <SwiperAutoSlider />
+        <Market />
       </main>
     </>
   )

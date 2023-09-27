@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  overflow-x: hidden !important;
+  scroll-behavior: smooth !important;
+}
+
+/* Common */
+.left_top_right_bottom_radius {
+  /* left top radius and right bottom radius */
+  border-radius: 0.7rem 0 0 0.7rem !important;
+}
+
+/* Swiper start */
 .slider_container {
   width: 100vw;
   max-width: 100vw;
@@ -30,3 +42,4 @@
 .swiper-pagination-bullet-active {
   background-color: #000 !important;
 }
+/* Swiper end */
