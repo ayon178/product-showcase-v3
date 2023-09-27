@@ -50,7 +50,10 @@ const Navbar = () => {
   }
 
   return (
-    <div id="navbar" className="bg-transparent py-4 px-2 md:shadow-md sticky top-0">
+    <div
+      id="navbar"
+      className="bg-transparent py-4 z-50 px-2 md:shadow-md sticky top-0 mb-[-4.3rem]"
+    >
       <div className="z-50 container  px-4 md:px-10 py-0 mx-auto flex flex-row justify-between">
         <Link
           href="/#"
