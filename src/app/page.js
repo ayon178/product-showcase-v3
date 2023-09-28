@@ -1,5 +1,6 @@
 'use client'
 
+import Benefit from '@/components/benifit/Benefit'
 import Market from '@/components/market/Market'
 import Navbar from '@/components/shared/Navbar'
 import SwiperAutoSlider from '@/components/slider/Slider'
@@ -43,9 +44,10 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main>
-        <SwiperAutoSlider />
+      <SwiperAutoSlider />
+      <main className="px-4 md:px-0">
         <Market />
+        <Benefit />
       </main>
     </>
   )

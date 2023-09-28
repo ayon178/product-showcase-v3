@@ -8,6 +8,7 @@ import MarketCard from './MarketCard'
 import { useEffect, useRef } from 'react'
 import useOnScreen from '@/hooks/useOnScreen'
 import { motion, useAnimation } from 'framer-motion'
+import { fadeInUpSmall } from '@/animation/animation'
 
 const marketData = [
   {
@@ -40,7 +41,7 @@ const Market = () => {
 
   return (
     <div ref={marketSectionRef} className="mt-16 container mx-auto">
-      <h1 className="text-primaryText text-2xl md:text-3xl text-center font-semibold w-fit mx-auto border-b-2 border-primary pb-2">
+      <h1 className="text-primaryText text-xl md:text-2xl text-center font-semibold w-fit mx-auto border-b-2 border-primary pb-2">
         Our Market Sectors
       </h1>
 
@@ -63,6 +64,21 @@ const Market = () => {
           </motion.div>
         ))}
       </div>
+      <motion.h1
+        className="text-center mt-16 mb-28 font-medium"
+        initial="hidden"
+        animate={marketControls}
+        variants={{
+          hidden: { opacity: 0, y: 100 },
+          visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.6, delay: 1 },
+          },
+        }}
+      >
+        Since 1964, we provide best solutions for our valuable customers
+      </motion.h1>
     </div>
   )
 }

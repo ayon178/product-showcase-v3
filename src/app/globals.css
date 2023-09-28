@@ -9,8 +9,7 @@ html {
 
 /* Common */
 .left_top_right_bottom_radius {
-  /* left top radius and right bottom radius */
-  border-radius: 0.7rem 0 0 0.7rem !important;
+  border-radius: 0.7rem 0 0.7rem 0 !important;
 }
 
 /* Swiper start */
