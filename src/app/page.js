@@ -1,6 +1,7 @@
 'use client'
 
 import Benefit from '@/components/benifit/Benefit'
+import Brand from '@/components/branding/Brand'
 import Market from '@/components/market/Market'
 import Navbar from '@/components/shared/Navbar'
 import SwiperAutoSlider from '@/components/slider/Slider'
@@ -50,6 +51,7 @@ export default function Home() {
         <Market />
         <Benefit />
         <Specification />
+        <Brand />
       </main>
     </>
   )

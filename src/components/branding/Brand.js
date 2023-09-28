@@ -1,0 +1,93 @@
+'use client'
+
+import {
+  BsEmojiSmileFill,
+  BsFillPostcardFill,
+  BsBatteryFull,
+} from 'react-icons/bs'
+import { FaHandHoldingHeart } from 'react-icons/fa'
+import BrandCard from './BrandCard'
+
+import Image from 'next/image'
+import img1 from '../../assets/market.jpg'
+
+const brandData = [
+  {
+    title: 'Qualified',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptas.',
+    icon: BsEmojiSmileFill,
+  },
+  {
+    title: 'Qualified',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptas.',
+    icon: BsFillPostcardFill,
+  },
+  {
+    title: 'Qualified',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptas.',
+    icon: FaHandHoldingHeart,
+  },
+  {
+    title: 'Qualified',
+    description:
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptas.',
+    icon: BsBatteryFull,
+  },
+]
+
+const imageData = [
+  { image: img1 },
+  { image: img1 },
+  { image: img1 },
+  { image: img1 },
+]
+
+const Brand = () => {
+  return (
+    <div className="container mx-auto my-16">
+      <h1 className="text-primaryText text-xl md:text-2xl text-center font-semibold w-fit mx-auto border-b-2 border-primary pb-2">
+        Our Branding
+      </h1>
+      <h1 className="text-center mt-8 mb-4 text-xl font-semibold text-primaryText">
+        Why Choose Us?
+      </h1>
+      <h1 className="text-2xl font-semibold text-primaryText bg-primary px-8 rounded-sm py-1 w-fit mx-auto">
+        Cause We Are Qualified
+      </h1>
+      <p className="mx-auto mt-4 text-center w-full sm:w-[80%] md:w-[60%] lg:w-[50%] text-slate-800">
+        &quot;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
+        debitis dolore laudantium, aut, consectetur in sit veniam molestiae
+        libero velit amet ipsam perferendis aliquid fugit! Quasi impedit facilis
+        minima laudantium?&quot;
+      </p>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-10">
+        {brandData.map((data, index) => (
+          <BrandCard key={index} data={data} />
+        ))}
+      </div>
+
+      {/* Images */}
+      <div className="left_top_right_bottom_radius grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-10 bg-primary mt-8">
+        {imageData.map((data, index) => (
+          <Image
+            key={index}
+            src={data.image}
+            alt="image"
+            width={100}
+            height={100}
+            layout="responsive"
+            className={`${
+              index === 0 ? 'rounded-tl-lg' : index === 3 ? 'rounded-br-lg' : ''
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export default Brand

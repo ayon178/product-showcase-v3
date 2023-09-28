@@ -11,11 +11,11 @@ const Benefit = () => {
         We are offering cost saving modern equipment that are used
         <br /> worldwide for Textile Mill Maintenance
       </p>
-      <div className="md:flex mx-auto justify-between items-center">
+      <div className="md:flex mx-auto justify-between items-center bg-primary mt-8">
         <h1>Image section</h1>
         <h1>Image section</h1>
       </div>
-      <div className="md:flex mx-auto justify-between items-center">
+      <div className="md:flex mx-auto justify-between items-center bg-primary my-8">
         <h1>Image section</h1>
         <h1>Image section</h1>
       </div>
