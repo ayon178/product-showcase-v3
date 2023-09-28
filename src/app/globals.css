@@ -22,7 +22,7 @@ html {
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.05)
     ),
-    url('../assets/slider.JPG');
+    url('../assets/bg.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -42,3 +42,18 @@ html {
   background-color: #000 !important;
 }
 /* Swiper end */
+
+/* Product Specification */
+.specification_bg {
+  background-image: url('../assets/product_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.specification_bg_inner {
+  background-image: url('../assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

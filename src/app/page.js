@@ -4,6 +4,7 @@ import Benefit from '@/components/benifit/Benefit'
 import Market from '@/components/market/Market'
 import Navbar from '@/components/shared/Navbar'
 import SwiperAutoSlider from '@/components/slider/Slider'
+import Specification from '@/components/specification/Specification'
 import gsap from 'gsap'
 import { useEffect } from 'react'
 
@@ -48,6 +49,7 @@ export default function Home() {
       <main className="px-4 md:px-0">
         <Market />
         <Benefit />
+        <Specification />
       </main>
     </>
   )

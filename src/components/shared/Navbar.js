@@ -52,7 +52,7 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className="bg-transparent py-4 z-50 px-2 md:shadow-md sticky top-0 mb-[-4.3rem]"
+      className="bg-transparent py-4 z-50 px-2 sticky top-0 mb-[-4.3rem]"
     >
       <div className="z-50 container  px-4 md:px-10 py-0 mx-auto flex flex-row justify-between">
         <Link
@@ -69,7 +69,7 @@ const Navbar = () => {
 
           <h1>LOGO</h1>
         </Link>
-        <ul className="text_color flex-row items-center gap-9 text-sm font-semibold text-primaryText hidden md:flex">
+        <ul className="text_color flex-row items-center gap-9 text-sm font-semibold text-slate-400 hidden md:flex">
           <li>
             <Link
               href="/#"
