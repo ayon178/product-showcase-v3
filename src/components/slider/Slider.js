@@ -75,6 +75,7 @@ export default function SwiperAutoSlider() {
 
   return (
     <Swiper
+      effect="fade"
       ref={swiperRef}
       spaceBetween={30}
       centeredSlides={true}
