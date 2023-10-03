@@ -42,14 +42,14 @@ const Slider = () => {
   }, [])
 
   useEffect(() => {
-    const zoomAnimation = gsap.fromTo(
+    const zoomAndTranslateAnimation = gsap.fromTo(
       '.slide-img',
-      { scale: 1 },
-      { scale: 1.2, duration: 5, ease: 'power2.inOut' } // Adjust the duration for slower zoom
+      { scale: 1, x: 0 },
+      { scale: 1.2, x: -130, duration: 5, ease: 'power2.inOut' } // Adjust the duration for slower zoom
     )
 
     return () => {
-      zoomAnimation.kill()
+      zoomAndTranslateAnimation.kill()
     }
   }, [currentSlide])
 
