@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { motion, useAnimation } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { gsap } from 'gsap'
 import { AnimatePresence } from 'framer-motion'
 import mainImage from '../../assets/slider.JPG'
@@ -27,9 +27,8 @@ const images = [
   },
 ]
 
-const Slider = () => {
+const FocusedSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0)
-  const controls = useAnimation()
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -45,7 +44,20 @@ const Slider = () => {
     const zoomAndTranslateAnimation = gsap.fromTo(
       '.slide-img',
       { scale: 1, x: 0 },
-      { scale: 1.2, x: -130, duration: 5, ease: 'power2.inOut' } // Adjust the duration for slower zoom
+      {
+        scale: 1.2,
+        x:
+          currentSlide === 0
+            ? -130
+            : currentSlide === 1
+            ? 70
+            : currentSlide === 2
+            ? 130
+            : 0,
+        y: currentSlide === 1 ? 90 : currentSlide === 2 ? -80 : 0,
+        duration: 5,
+        ease: 'power2.inOut',
+      }
     )
 
     return () => {
@@ -83,4 +95,4 @@ const Slider = () => {
   )
 }
 
-export default Slider
+export default FocusedSlider

@@ -4,7 +4,7 @@ import Benefit from '@/components/benifit/Benefit'
 import Brand from '@/components/branding/Brand'
 import Market from '@/components/market/Market'
 import Navbar from '@/components/shared/Navbar'
-import FadeInSlider from '@/components/slider/FadeInSlider'
+import FocusedSlider from '@/components/slider/FocusedSlider'
 import SwiperAutoSlider from '@/components/slider/Slider'
 import Specification from '@/components/specification/Specification'
 import gsap from 'gsap'
@@ -44,13 +44,11 @@ export default function Home() {
     }
   }, [])
 
-  
-
   return (
     <>
       <Navbar />
       {/* <SwiperAutoSlider /> */}
-      <FadeInSlider/>
+      <FocusedSlider />
       <main className="px-4 md:px-0">
         <Market />
         <Benefit />
