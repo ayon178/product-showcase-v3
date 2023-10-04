@@ -8,7 +8,6 @@ import MarketCard from './MarketCard'
 import { useEffect, useRef } from 'react'
 import useOnScreen from '@/hooks/useOnScreen'
 import { motion, useAnimation } from 'framer-motion'
-import { fadeInUpSmall } from '@/animation/animation'
 
 const marketData = [
   {

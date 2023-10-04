@@ -82,5 +82,8 @@ html {
   justify-content: center;
   align-items: center;
   overflow: hidden !important;
-}
 
+  position: absolute;
+  top: 0;
+  right: 0;
+}
