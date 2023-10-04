@@ -70,7 +70,7 @@ const FocusedSlider = () => {
       <AnimatePresence initial={false}>
         <motion.div
           key={currentSlide}
-          className="absolute top-0 left-0 w-full h-full"
+          className="absolute top-0 left-0 max-w-screen h-auto w-screen overflow-hidden"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1.5 }}
           exit={{ opacity: 0 }}
