@@ -8,6 +8,14 @@ import Image from 'next/image'
 import mainSliderImage from '../../assets/Product2.png'
 import gsap, { Power2 } from 'gsap'
 
+// Images
+import slideOneBg from '../../assets/slider/slider_bg_1.png'
+import slideTwoBg from '../../assets/slider/slider_bg_2.png'
+import slideThreeBg from '../../assets/slider/slider_bg_3.png'
+import slideOneProduct from '../../assets/slider/slider_1.png'
+import slideTwoProduct from '../../assets/slider/slider_2.png'
+import slideThreeProduct from '../../assets/slider/slider_3.png'
+
 const RandomPositionSlider = () => {
   const swiperRef = useRef(null)
 
@@ -21,6 +29,23 @@ const RandomPositionSlider = () => {
         const sliderContainer = document.querySelector(
           '.slider_container_random_slider'
         )
+
+        const activeSlide = document.querySelector(
+          `.slide-${swiper.activeIndex}`
+        )
+
+        if (activeSlide) {
+          if (sliderContainer) {
+            // Set the background image for the current slide
+            if (swiper.activeIndex === 0) {
+              sliderContainer.style.backgroundImage = `url(${slideOneBg.src})`
+            } else if (swiper.activeIndex === 1) {
+              sliderContainer.style.backgroundImage = `url(${slideTwoBg.src})`
+            } else if (swiper.activeIndex === 2) {
+              sliderContainer.style.backgroundImage = `url(${slideThreeBg.src})`
+            }
+          }
+        }
 
         // Use GSAP to animate the image
         gsap.to(sliderContainer, {
@@ -80,7 +105,7 @@ const RandomPositionSlider = () => {
         )
       })
     }
-  }, [])
+  }, [slideOneBg, slideTwoBg, slideThreeBg])
 
   return (
     <div className="overflow-hidden w-screen">
@@ -101,45 +126,15 @@ const RandomPositionSlider = () => {
         className="mySwiper  relative h-screen w-screen z-10"
       >
         <div className="slider_container_random_slider"></div>
-        <SwiperSlide>
-          <div className={`relative h-full flex items-center justify-center`}>
-            <div className="mt-5 md:flex container mx-auto ps-5 md:ps-10 items-center justify-between">
-              <div className="w-full md:w-[50%] overflow-hidden random_slide_image">
-                <Image
-                  src={mainSliderImage}
-                  alt="Royal Melbourne Hospital"
-                  width="85%"
-                  height="100%"
-                  className="py-1 w-[85%]"
-                />
-              </div>
-              {/* Text container */}
-              <div className="w-full md:w-[50%] mt-10 md:mt-0 flex flex-col justify-start md:justify-end pr-0 md:pr-10">
-                <h1 className="slide-header-left text-white text-2xl md:text-5xl text-center md:text-right slide-header font-bold">
-                  Text Writeup
-                </h1>
-                <p className="slide-text text-white mt-10 font-semibold text-center md:text-right slide-text text-[.9rem] w-full ml-auto md:w-3/4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusantium nemo nihil nobis eveniet ullam, earum dolorem
-                  corporis! Quod unde debitis voluptate cumque cum atque
-                  deleniti, voluptas laboriosam ipsam et aut!
-                </p>
-                <button className="bg-primary slide-text px-4 py-2 w-36 mr-auto md:mr-0 ml-auto rounded-sm mt-4 text-primaryText text-sm font-semibold">
-                  Call to Order
-                </button>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="slide-2">
           <div className={` relative h-full flex items-center justify-center`}>
             <div className="mt-5 md:flex container mx-auto ps-5 md:ps-10 items-center justify-between">
               {/* Text container */}
               <div className="w-full md:w-[50%] mt-10 md:mt-0 flex flex-col justify-start pr-0 md:pr-10">
-                <h1 className="slide-header-right text-white text-2xl md:text-5xl text-center md:text-left slide-header font-bold">
+                <h1 className="slide-header-right text-primaryText text-2xl md:text-5xl text-center md:text-left slide-header font-extrabold">
                   Text Writeup
                 </h1>
-                <p className="text-white slide-text mt-10 font-semibold text-center md:text-left slide-text text-[.9rem] w-full mr-auto md:w-3/4">
+                <p className="text-primaryText slide-text mt-10 font-semibold text-center md:text-left slide-text text-[.9rem] w-full mr-auto md:w-3/4">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Accusantium nemo nihil nobis eveniet ullam, earum dolorem
                   corporis! Quod unde debitis voluptate cumque cum atque
@@ -152,7 +147,68 @@ const RandomPositionSlider = () => {
 
               <div className="w-full md:w-[50%] overflow-hidden random_slide_image">
                 <Image
-                  src={mainSliderImage}
+                  src={slideThreeProduct}
+                  alt="Royal Melbourne Hospital"
+                  width="85%"
+                  height="100%"
+                  className="py-1 w-[85%]"
+                />
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="slide-0">
+          <div className={`relative h-full flex items-center justify-center`}>
+            <div className="mt-5 md:flex container mx-auto ps-5 md:ps-10 items-center justify-between">
+              <div className="w-full md:w-[50%] overflow-hidden random_slide_image">
+                <Image
+                  src={slideOneProduct}
+                  alt="Royal Melbourne Hospital"
+                  width="85%"
+                  height="100%"
+                  className="py-1 w-[85%]"
+                />
+              </div>
+              {/* Text container */}
+              <div className="w-full md:w-[50%] mt-10 md:mt-0 flex flex-col justify-start md:justify-end pr-0 md:pr-10">
+                <h1 className="slide-header-left text-primaryText text-2xl md:text-5xl text-center md:text-right slide-header font-extrabold">
+                  Text Writeup
+                </h1>
+                <p className="slide-text text-primaryText mt-10 font-semibold text-center md:text-right slide-text text-[.9rem] w-full ml-auto md:w-3/4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium nemo nihil nobis eveniet ullam, earum dolorem
+                  corporis! Quod unde debitis voluptate cumque cum atque
+                  deleniti, voluptas laboriosam ipsam et aut!
+                </p>
+                <button className="bg-primary slide-text px-4 py-2 w-36 mr-auto md:mr-0 ml-auto rounded-sm mt-4 text-primaryText text-sm font-semibold">
+                  Call to Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="slide-1">
+          <div className={` relative h-full flex items-center justify-center`}>
+            <div className="mt-5 md:flex container mx-auto ps-5 md:ps-10 items-center justify-between">
+              {/* Text container */}
+              <div className="w-full md:w-[50%] mt-10 md:mt-0 flex flex-col justify-start pr-0 md:pr-10">
+                <h1 className="slide-header-right text-primaryText text-2xl md:text-5xl text-center md:text-left slide-header font-extrabold">
+                  Text Writeup
+                </h1>
+                <p className="text-primaryText slide-text mt-10 font-semibold text-center md:text-left slide-text text-[.9rem] w-full mr-auto md:w-3/4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium nemo nihil nobis eveniet ullam, earum dolorem
+                  corporis! Quod unde debitis voluptate cumque cum atque
+                  deleniti, voluptas laboriosam ipsam et aut!
+                </p>
+                <button className="bg-primary slide-text px-4 py-2 w-36 mr-auto rounded-sm mt-4 text-primaryText text-sm font-semibold">
+                  Call to Order
+                </button>
+              </div>
+
+              <div className="w-full md:w-[50%] overflow-hidden random_slide_image">
+                <Image
+                  src={slideTwoProduct}
                   alt="Royal Melbourne Hospital"
                   width="85%"
                   height="100%"

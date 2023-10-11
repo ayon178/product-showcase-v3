@@ -48,8 +48,8 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <SwiperAutoSlider />
-      <FocusedSlider />
+      {/* <SwiperAutoSlider /> */}
+      {/* <FocusedSlider /> */}
       <RandomPositionSlider />
       <main className="px-4 md:px-0">
         <Market />
