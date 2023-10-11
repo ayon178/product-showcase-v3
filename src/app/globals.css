@@ -12,6 +12,10 @@ html {
   border-radius: 0.7rem 0 0.7rem 0 !important;
 }
 
+.left_top_right_bottom_radius_big{
+  border-radius: 1.5rem 0 1.5rem 0 !important;
+}
+
 /* Swiper start */
 .slider_container {
   width: 100vw;

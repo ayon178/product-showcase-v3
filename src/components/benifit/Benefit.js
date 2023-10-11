@@ -1,3 +1,11 @@
+import Image from 'next/image'
+
+// Images
+import benifitProductOne from '../../assets/benifit/benifit_product_one.png'
+import benifitProductTwo from '../../assets/benifit/benifit_product_two.png'
+import benifitImage from '../../assets/benifit/benifit_image_modified.png'
+import benifitTextImage from '../../assets/benifit/benifit_text_modified.png'
+
 const Benefit = () => {
   return (
     <div className="container mx-auto">
@@ -11,13 +19,53 @@ const Benefit = () => {
         We are offering cost saving modern equipment that are used
         <br /> worldwide for Textile Mill Maintenance
       </p>
-      <div className="md:flex mx-auto justify-between items-center bg-primary mt-8">
-        <h1>Image section</h1>
-        <h1>Image section</h1>
+      <div className="md:flex mx-auto gap-4 justify-around items-center bg-primary mt-8 px-8 left_top_right_bottom_radius_big">
+        <Image
+          src={benifitProductOne.src}
+          alt="benifit product one"
+          width={400}
+          height={400}
+        />
+        <div>
+          <p className="text-primaryText">Lorem ipsum</p>
+          <h1 className="text-primaryText text-xl font-semibold mb-4">
+            Lorem ipsum dolor
+          </h1>
+          <p className="text-gray-700 text-sm text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            explicabo velit quo nam veritatis expedita ab harum unde sit nemo.
+          </p>
+        </div>
+        <Image
+          src={benifitImage.src}
+          alt="benifit product one"
+          width={500}
+          height={500}
+        />
       </div>
-      <div className="md:flex mx-auto justify-between items-center bg-primary my-8">
-        <h1>Image section</h1>
-        <h1>Image section</h1>
+      <div className="md:flex mx-auto gap-4 justify-around items-center bg-primary mt-8 px-8 left_top_right_bottom_radius_big mb-8">
+        <Image
+          src={benifitTextImage.src}
+          alt="benifit product one"
+          width={500}
+          height={500}
+        />
+        <div>
+          <p className="text-primaryText">Lorem ipsum</p>
+          <h1 className="text-primaryText text-xl font-semibold mb-4">
+            Lorem ipsum dolor
+          </h1>
+          <p className="text-gray-700 text-sm text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+            explicabo velit quo nam veritatis expedita ab harum unde sit nemo.
+          </p>
+        </div>
+        <Image
+          src={benifitProductTwo.src}
+          alt="benifit product one"
+          width={400}
+          height={400}
+        />
       </div>
 
       <div className="w-full md:w-[60%] pb-6 bg-white border border-gray-200 rounded-lg shadow mx-auto">
