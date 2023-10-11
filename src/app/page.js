@@ -2,6 +2,7 @@
 
 import Benefit from '@/components/benifit/Benefit'
 import Brand from '@/components/branding/Brand'
+import Cta from '@/components/cta/Cta'
 import Market from '@/components/market/Market'
 import MarketV2 from '@/components/market/MarketV2'
 import Navbar from '@/components/shared/Navbar'
@@ -58,6 +59,7 @@ export default function Home() {
         <Benefit />
         <Specification />
         <Brand />
+        <Cta />
       </main>
     </>
   )

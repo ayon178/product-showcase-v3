@@ -10,6 +10,10 @@ import BrandCard from './BrandCard'
 
 import Image from 'next/image'
 import img1 from '../../assets/market.jpg'
+import brandOne from '../../assets/branding/brand_one.png'
+import brandTwo from '../../assets/branding/brand_two.png'
+import brandThree from '../../assets/branding/brand_three.png'
+import brandFour from '../../assets/branding/brand_four.png'
 
 const brandData = [
   {
@@ -39,10 +43,10 @@ const brandData = [
 ]
 
 const imageData = [
-  { image: img1 },
-  { image: img1 },
-  { image: img1 },
-  { image: img1 },
+  { image: brandOne },
+  { image: brandTwo },
+  { image: brandThree },
+  { image: brandFour },
 ]
 
 const Brand = () => {
@@ -71,7 +75,7 @@ const Brand = () => {
       </div>
 
       {/* Images */}
-      <div className="left_top_right_bottom_radius grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 p-10 bg-primary mt-8">
+      <div className="left_top_right_bottom_radius_big grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 px-10 py-5 bg-primary mt-8">
         {imageData.map((data, index) => (
           <Image
             key={index}

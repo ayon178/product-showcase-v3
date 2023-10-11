@@ -87,3 +87,11 @@ html {
   top: 0;
   right: 0;
 }
+
+/* Call to action */
+.cta_bg{
+  background-image: url('../assets/cta/cta_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
