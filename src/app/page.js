@@ -3,6 +3,7 @@
 import Benefit from '@/components/benifit/Benefit'
 import Brand from '@/components/branding/Brand'
 import Market from '@/components/market/Market'
+import MarketV2 from '@/components/market/MarketV2'
 import Navbar from '@/components/shared/Navbar'
 import FocusedSlider from '@/components/slider/FocusedSlider'
 import RandomPositionSlider from '@/components/slider/RandomPositionSlider'
@@ -52,7 +53,8 @@ export default function Home() {
       {/* <FocusedSlider /> */}
       <RandomPositionSlider />
       <main className="px-4 md:px-0">
-        <Market />
+        {/* <Market /> */}
+        <MarketV2 />
         <Benefit />
         <Specification />
         <Brand />
