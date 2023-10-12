@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-import toast from 'react-hot-toast'
 
 export default function Login() {
   const fixedEmail = 'demo@gmail.com'
@@ -19,14 +18,13 @@ export default function Login() {
 
   const handleSubmit = e => {
     e.preventDefault()
-    console.log(loginData)
     if (loginData.email === '' || loginData.password === '') {
-      toast.error('Please fill all the fields')
+      alert('Please fill all the fields')
       return
     }
 
     if (loginData.email !== fixedEmail || loginData.password !== fixedPass) {
-      toast.error('Invalid Credentials')
+      alert('Invalid Credentials')
       return
     }
     toast.success('Login Successful')
