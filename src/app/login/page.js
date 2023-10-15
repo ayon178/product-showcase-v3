@@ -27,7 +27,7 @@ export default function Login() {
       alert('Invalid Credentials')
       return
     }
-    toast.success('Login Successful')
+    alert('Login Successful')
     if (typeof window !== 'undefined') {
       window.localStorage.setItem('product_v3_token', 'token')
       window.location.href = '/welcome'
