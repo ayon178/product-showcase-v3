@@ -30,7 +30,7 @@ export default function Login() {
     toast.success('Login Successful')
     if (typeof window !== 'undefined') {
       window.localStorage.setItem('product_v3_token', 'token')
-      window.location.href = '/'
+      window.location.href = '/welcome'
     }
   }
 
