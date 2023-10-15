@@ -31,7 +31,7 @@ const MarketV2 = () => {
               width={200}
               height={200}
             />
-            <div className="flex gap-2 absolute bottom-4 justify-center left-0 right-0 font-medium">
+            <div className="flex gap-2 absolute bottom-2 justify-center left-0 right-0 font-medium">
               <h1>Auto Space Services &nbsp; &nbsp;|</h1>
               <Image src={iconOne} alt="Market Image" width={20} height={20} />
             </div>
@@ -43,7 +43,7 @@ const MarketV2 = () => {
               width={300}
               height={200}
             />
-            <div className="flex gap-2 absolute bottom-8 md:bottom-5 justify-center left-0 right-0 font-medium">
+            <div className="flex gap-2 absolute bottom-4 justify-center left-0 right-0 font-medium">
               <h1>Auto Space Services &nbsp; &nbsp;|</h1>
               <Image src={iconTwo} alt="Market Image" width={20} height={20} />
             </div>
@@ -74,7 +74,7 @@ const MarketV2 = () => {
               width={200}
               height={200}
             />
-            <div className="flex gap-2 absolute bottom-[43%] justify-center left-0 right-0 font-medium">
+            <div className="flex gap-2 absolute bottom-[51%] justify-center left-0 right-0 font-medium">
               <h1>Auto Space Services &nbsp; &nbsp;|</h1>
               <Image src={iconFour} alt="Market Image" width={20} height={20} />
             </div>

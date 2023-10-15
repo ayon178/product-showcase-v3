@@ -63,25 +63,10 @@ html {
 }
 
 .secondaryBg {
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   background-image: url('../assets/spec/bg.png');
-}
-
-.secondaryBg::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../assets/spec/bg.png'); /* Same as the background image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.5; /* Adjust the opacity as needed (0.0 to 1.0) */
 }
 
 .slider_container_two {
@@ -117,4 +102,58 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+/* Play button */
+.play-button {
+  color: #e83b3e;
+  background-color: #fff;
+  height: 90px;
+  width: 90px;
+  font-size: 90px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  transition: 0.4s ease-out;
+  position: relative;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.play-button:hover {
+  color: #fff;
+  background-color: #e83b3e;
+}
+
+/* for animation play-button */
+.play-button::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #e83b3e;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: play-button 2s cubic-bezier(0, 0.01, 0, 0) infinite;
+}
+
+@keyframes play-button {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+
+  90%,
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
 }

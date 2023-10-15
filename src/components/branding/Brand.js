@@ -58,7 +58,7 @@ const Brand = () => {
       <h1 className="text-primaryText text-xl md:text-2xl text-center font-semibold w-fit mx-auto border-b-2 border-primary pb-2">
         Our Branding
       </h1>
-      <h1 className="text-center mt-8 mb-4 text-xl font-semibold text-primaryText">
+      <h1 className="text-center mt-8 mb-4 text-2xl font-semibold text-primaryText">
         Why Choose Us?
       </h1>
       <h1 className="text-2xl font-semibold text-primaryText bg-primary px-8 rounded-sm py-1 w-fit mx-auto">

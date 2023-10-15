@@ -27,6 +27,19 @@ export default function Home() {
     const text = document.querySelectorAll('.text_color')
     const timeline = gsap.timeline({ paused: true })
 
+    // Define a function to handle the scroll event
+    function handleScroll() {
+      const scrollThreshold = 0 // Adjust this value as needed
+      if (window.scrollY > scrollThreshold) {
+        navbar.classList.remove('container')
+      } else {
+        navbar.classList.add('container')
+      }
+    }
+
+    // Attach the scroll event listener
+    window.addEventListener('scroll', handleScroll)
+
     timeline.to(navbar, {
       // backgroundColor: 'red',
       backdropFilter: 'blur(10px)',
@@ -36,7 +49,7 @@ export default function Home() {
       marginTop: 0,
       paddingBottom: '1rem',
       paddingTop: '1rem',
-      width: '100vw !important',
+      top: 0,
     })
 
     timeline.to(text, {

@@ -10,6 +10,7 @@ import iconOne from '../../assets/spec/icon_1.png'
 import iconTwo from '../../assets/spec/icon_2.png'
 import iconThree from '../../assets/spec/icon_3.png'
 import iconFour from '../../assets/spec/icon_4.png'
+import VideoPlayer from '../shared/VideoPlayer'
 
 const iconData = [
   {
@@ -38,7 +39,7 @@ const Specification = () => {
       </h1>
       <div className="container mx-auto  specification_bg py-10">
         <div className="md:flex justify-between items-center">
-          <div className="flex items-center relative">
+          <div className="flex w-[50%] items-center relative">
             <Image
               src={productOne}
               alt="product one"
@@ -46,7 +47,7 @@ const Specification = () => {
               height={500}
               className="mx-auto"
             />
-            <div className="absolute top-0 right-[-20%]">
+            <div className="absolute top-3 right-[-15%]">
               <h1 className="text-xl font-semibold text-primaryText mb-2">
                 IR Scanning / Thermography
               </h1>
@@ -56,7 +57,7 @@ const Specification = () => {
                 and their current conditions
               </p>
             </div>
-            <div className="-ml-28">
+            <div className="-ml-32">
               {iconData.map((data, index) => (
                 <div
                   key={index}
@@ -70,15 +71,9 @@ const Specification = () => {
               ))}
             </div>
           </div>
-          <div>
-            
-            <Image
-              src={imageOne}
-              alt="image one"
-              width={500}
-              height={500}
-              className="mx-auto mt-4"
-            />
+          <div className="w-[50%] -mr-20">
+            <h1 className='text-center text-xl font-semibold text-primaryText mb-2'>View inspection video</h1>
+            <VideoPlayer videoId="t1pp671qy0g" />
           </div>
         </div>
       </div>

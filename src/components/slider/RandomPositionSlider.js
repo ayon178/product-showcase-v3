@@ -50,7 +50,7 @@ const RandomPositionSlider = () => {
 
         // Use GSAP to animate the image
         gsap.to(sliderContainer, {
-          opacity: 0.2,
+          opacity: 0,
           scale: 1.2,
           duration: 0.5,
           onComplete: () => {
@@ -139,7 +139,7 @@ const RandomPositionSlider = () => {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1.5, delay: 1 }}
+                transition={{ duration: 1.5, delay: .5 }}
                 className="w-full md:w-[50%] mt-10 md:mt-0 flex flex-col justify-start pr-0 md:pr-10"
               >
                 <h1 className="slide-header-right text-primaryText text-2xl md:text-5xl text-center md:text-left slide-header font-extrabold">
@@ -159,7 +159,7 @@ const RandomPositionSlider = () => {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1.5, delay: 1 }}
+                transition={{ duration: 1.5, delay: .5 }}
                 className="w-full md:w-[50%] overflow-hidden random_slide_image"
               >
                 <Image
