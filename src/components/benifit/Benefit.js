@@ -68,7 +68,7 @@ const Benefit = () => {
         />
       </div>
 
-      <div className="w-full md:w-[60%] pb-6 bg-white border border-gray-200 rounded-lg shadow mx-auto">
+      {/* <div className="w-full md:w-[60%] pb-6 bg-white border border-gray-200 rounded-lg shadow mx-auto">
         <h1 className="text-center bg-primary font-semibold py-2">
           AIR LEAK AUDIT REPORT
         </h1>
@@ -103,7 +103,7 @@ const Benefit = () => {
             <p className="pl-3 text-sm text-gray-600">Cards:58</p>
             <p className="pl-3 text-sm text-gray-600">Lap Former:11</p>
           </div>
-          {/* 2nd part */}
+          
           <div>
             <h1 className=" text-md font-semibold text-primaryText">
               4. Customer&apos;S Name:
@@ -134,7 +134,7 @@ const Benefit = () => {
             <p className="pl-3 text-sm text-gray-600">Lap Former:11</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }

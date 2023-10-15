@@ -1,4 +1,7 @@
+'use client'
+
 import React from 'react'
+import {IoMdCall} from 'react-icons/io'
 
 const Cta = () => {
   return (
@@ -10,9 +13,10 @@ const Cta = () => {
       <p className="text-xl font-semibold mt-4 mb-2">
         Call us to make a booking
       </p>
-      <p className="bg-yellow-400 font-semibold px-3 py-2 left_top_right_bottom_radius">
-        ✆ 01000000000
-      </p>
+      <div className="flex gap-2 items-center mt-4 bg-yellow-400 px-3 py-2 left_top_right_bottom_radius">
+        <IoMdCall className="text-2xl text-textPrimary" />
+        <p className=" font-semibold text-xl">01000000000</p>
+      </div>
     </div>
   )
 }

@@ -5,6 +5,8 @@ import { BiMenuAltRight } from 'react-icons/bi'
 import MobileMenu from './MobileMenu'
 import gsap from 'gsap'
 import Link from 'next/link'
+import Image from 'next/image'
+import logo from '../../assets/logo.png'
 
 const Navbar = () => {
   const refMobile = useRef(null)
@@ -52,22 +54,21 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className="bg-transparent py-4 z-50 px-2 sticky top-0 mb-[-4rem] w-screen"
+      className="bg-transparent mt-4 z-50 px-2 sticky top-0 mb-[-4rem] w-screen"
     >
       <div className="z-50 container  px-4 md:px-10 py-0 mx-auto flex flex-row justify-between">
         <Link
           href="/#"
           className="text_color font-semibold text-2xl text-primaryText flex items-center"
         >
-          {/* <Image
-          src={logo}
-          alt="Royal Melbourne Hospital"
-          width={50}
-          height={50}
-          className="py-1"
-        /> */}
+          <Image
+            src={logo}
+            alt="Royal Melbourne Hospital"
+            width={50}
+            height={50}
+          />
 
-          <h1>LOGO</h1>
+          {/* <h1>LOGO</h1> */}
         </Link>
         <ul className="text_color flex-row items-center gap-9 text-sm font-semibold text-primaryText hidden md:flex">
           <li>
@@ -76,7 +77,7 @@ const Navbar = () => {
               onMouseEnter={handleMenuItemHover}
               onMouseLeave={handleMenuItemLeave}
             >
-              Menu 1
+              Home
             </Link>
           </li>
           <li>
@@ -85,7 +86,7 @@ const Navbar = () => {
               onMouseEnter={handleMenuItemHover}
               onMouseLeave={handleMenuItemLeave}
             >
-              Menu 2
+              About
             </Link>
           </li>
           <li>
@@ -94,7 +95,7 @@ const Navbar = () => {
               onMouseEnter={handleMenuItemHover}
               onMouseLeave={handleMenuItemLeave}
             >
-              Menu 3
+              Categories
             </Link>
           </li>
           <li>
@@ -103,7 +104,34 @@ const Navbar = () => {
               onMouseEnter={handleMenuItemHover}
               onMouseLeave={handleMenuItemLeave}
             >
-              Menu 4
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/#"
+              onMouseEnter={handleMenuItemHover}
+              onMouseLeave={handleMenuItemLeave}
+            >
+              Portfolio
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/#"
+              onMouseEnter={handleMenuItemHover}
+              onMouseLeave={handleMenuItemLeave}
+            >
+              Gallery
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/#"
+              onMouseEnter={handleMenuItemHover}
+              onMouseLeave={handleMenuItemLeave}
+            >
+              Contact
             </Link>
           </li>
         </ul>

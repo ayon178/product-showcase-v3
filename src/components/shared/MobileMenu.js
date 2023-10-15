@@ -14,25 +14,49 @@ const MobileMenu = forwardRef((props, ref) => {
         <li>
           <Link href="/#" className="text-2xl">
             {' '}
-            Menu 1
+            Home
           </Link>
         </li>
         <li>
           <Link href="/#" className="text-2xl">
             {' '}
-            Menu 2
+            About
           </Link>
         </li>
         <li>
           <Link href="/#" className="text-2xl">
             {' '}
-            Menu 3
+            Categories
           </Link>
         </li>
         <li>
           <Link href="/#" className="text-2xl">
             {' '}
-            Menu 4
+            Services
+          </Link>
+        </li>
+        <li>
+          <Link href="/#" className="text-2xl">
+            {' '}
+            Portfolio
+          </Link>
+        </li>
+        <li>
+          <Link href="/#" className="text-2xl">
+            {' '}
+            Services
+          </Link>
+        </li>
+        <li>
+          <Link href="/#" className="text-2xl">
+            {' '}
+            Gallery
+          </Link>
+        </li>
+        <li>
+          <Link href="/#" className="text-2xl">
+            {' '}
+            Contact
           </Link>
         </li>
       </ul>

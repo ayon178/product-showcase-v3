@@ -164,9 +164,9 @@ const RandomPositionSlider = () => {
                 <Image
                   src={slideOneProduct}
                   alt="Royal Melbourne Hospital"
-                  width="85%"
+                  width="65%"
                   height="100%"
-                  className="py-1 w-[85%]"
+                  className="py-1 w-[65%]"
                 />
               </div>
               {/* Text container */}

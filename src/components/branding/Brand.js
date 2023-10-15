@@ -15,30 +15,33 @@ import brandTwo from '../../assets/branding/brand_two.png'
 import brandThree from '../../assets/branding/brand_three.png'
 import brandFour from '../../assets/branding/brand_four.png'
 
+import iconOne from '../../assets/branding/icon_1.png'
+import iconTwo from '../../assets/branding/icon_2.png'
+import iconThree from '../../assets/branding/icon_3.png'
+import iconFour from '../../assets/branding/icon_4.png'
+import iconFive from '../../assets/branding/icon_5.png'
+
 const brandData = [
   {
-    title: 'Qualified',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptas.',
-    icon: BsEmojiSmileFill,
+    title: `Equipment<br/>Maintenance`,
+
+    icon: iconOne,
   },
   {
-    title: 'Qualified',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptas.',
-    icon: BsFillPostcardFill,
+    title: `Fire<br/>Safety`,
+    icon: iconTwo,
   },
   {
-    title: 'Qualified',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptas.',
-    icon: FaHandHoldingHeart,
+    title: `Energy<br/>Conservation`,
+    icon: iconThree,
   },
   {
-    title: 'Qualified',
-    description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptas.',
-    icon: BsBatteryFull,
+    title: `Condition Based<br/>Maintenance`,
+    icon: iconFour,
+  },
+  {
+    title: `Immidiate<br/>Detection`,
+    icon: iconFive,
   },
 ]
 
@@ -68,7 +71,7 @@ const Brand = () => {
         minima laudantium?&quot;
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 mt-10">
         {brandData.map((data, index) => (
           <BrandCard key={index} data={data} />
         ))}
