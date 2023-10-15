@@ -98,11 +98,11 @@ export default function Home() {
   //   )
   // }
 
-  if (!token) {
-    if (typeof window !== 'undefined') {
-      window.location.href = '/login'
-    }
-  }
+  // if (!token) {
+  //   if (typeof window !== 'undefined') {
+  //     window.location.href = '/login'
+  //   }
+  // }
 
   return (
     <>
