@@ -78,7 +78,7 @@ const Brand = () => {
       </div>
 
       {/* Images */}
-      <div className="left_top_right_bottom_radius_big grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 px-10 py-5 bg-primary mt-8">
+      <div className="left_top_right_bottom_radius_big grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 px-10 py-5 bg-primary mt-8 ">
         {imageData.map((data, index) => (
           <Image
             key={index}
@@ -89,7 +89,7 @@ const Brand = () => {
             layout="responsive"
             className={`${
               index === 0 ? 'rounded-tl-lg' : index === 3 ? 'rounded-br-lg' : ''
-            }`}
+            } `}
           />
         ))}
       </div>
