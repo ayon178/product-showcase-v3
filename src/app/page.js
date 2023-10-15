@@ -36,6 +36,7 @@ export default function Home() {
       marginTop: 0,
       paddingBottom: '1rem',
       paddingTop: '1rem',
+      width: '100vw !important',
     })
 
     timeline.to(text, {

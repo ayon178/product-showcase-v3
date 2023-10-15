@@ -20,13 +20,15 @@ const Benefit = () => {
         <br /> worldwide for Textile Mill Maintenance
       </p>
       <div className="md:flex mx-auto gap-4 justify-around items-center bg-primary mt-8 px-8 left_top_right_bottom_radius_big">
-        <Image
-          src={benifitProductOne.src}
-          alt="benifit product one"
-          width={400}
-          height={400}
-        />
-        <div>
+        <div className="w-[40%]">
+          <Image
+            src={benifitProductOne.src}
+            alt="benifit product one"
+            width={500}
+            height={500}
+          />
+        </div>
+        <div className="w-[30%]">
           <p className="text-primaryText">Lorem ipsum</p>
           <h1 className="text-primaryText text-xl font-semibold mb-4">
             Lorem ipsum dolor
@@ -36,12 +38,14 @@ const Benefit = () => {
             explicabo velit quo nam veritatis expedita ab harum unde sit nemo.
           </p>
         </div>
-        <Image
-          src={benifitImage.src}
-          alt="benifit product one"
-          width={500}
-          height={500}
-        />
+        <div className="w-[40%]">
+          <Image
+            src={benifitImage.src}
+            alt="benifit product one"
+            width={500}
+            height={500}
+          />
+        </div>
       </div>
       <div className="md:flex mx-auto gap-4 justify-around items-center bg-primary mt-8 px-8 left_top_right_bottom_radius_big mb-8">
         <Image

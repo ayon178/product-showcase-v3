@@ -7,6 +7,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper'
 import Image from 'next/image'
 import mainSliderImage from '../../assets/Product2.png'
 import gsap, { Power2 } from 'gsap'
+import { motion } from 'framer-motion'
 
 // Images
 import slideOneBg from '../../assets/slider/slider_bg_1.png'
@@ -38,11 +39,11 @@ const RandomPositionSlider = () => {
           if (sliderContainer) {
             // Set the background image for the current slide
             if (swiper.activeIndex === 0) {
-              sliderContainer.style.backgroundImage = `url(${slideOneBg.src})`
+              sliderContainer.style.backgroundImage = `url(${slideThreeBg.src})`
             } else if (swiper.activeIndex === 1) {
               sliderContainer.style.backgroundImage = `url(${slideTwoBg.src})`
             } else if (swiper.activeIndex === 2) {
-              sliderContainer.style.backgroundImage = `url(${slideThreeBg.src})`
+              sliderContainer.style.backgroundImage = `url(${slideOneBg.src})`
             }
           }
         }
@@ -70,7 +71,7 @@ const RandomPositionSlider = () => {
             element,
             {
               opacity: 0,
-              scale: 0.5,
+              scale: 0.8,
               transformOrigin: 'center center',
               delay: 0.5,
               duration: 2,
@@ -101,14 +102,14 @@ const RandomPositionSlider = () => {
         gsap.fromTo(
           `.slide-text`,
           { opacity: 0, y: 100 },
-          { opacity: 1, y: 0, duration: 1, delay: 1.3, ease: Power2.easeInOut }
+          { opacity: 1, y: 0, duration: 1, delay: 0.7, ease: Power2.easeInOut }
         )
       })
     }
   }, [slideOneBg, slideTwoBg, slideThreeBg])
 
   return (
-    <div className="overflow-hidden w-screen">
+    <div className="overflow-hidden w-screen -mt-20">
       <Swiper
         effect="fade"
         ref={swiperRef}
@@ -125,12 +126,22 @@ const RandomPositionSlider = () => {
         modules={[Autoplay, Pagination]}
         className="mySwiper  relative h-screen w-screen z-10"
       >
-        <div className="slider_container_random_slider"></div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6 }}
+          className="slider_container_random_slider"
+        ></motion.div>
         <SwiperSlide className="slide-2">
           <div className={` relative h-full flex items-center justify-center`}>
             <div className="mt-5 md:flex container mx-auto ps-5 md:ps-10 items-center justify-between">
               {/* Text container */}
-              <div className="w-full md:w-[50%] mt-10 md:mt-0 flex flex-col justify-start pr-0 md:pr-10">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1.5, delay: 1 }}
+                className="w-full md:w-[50%] mt-10 md:mt-0 flex flex-col justify-start pr-0 md:pr-10"
+              >
                 <h1 className="slide-header-right text-primaryText text-2xl md:text-5xl text-center md:text-left slide-header font-extrabold">
                   Text Writeup
                 </h1>
@@ -143,9 +154,14 @@ const RandomPositionSlider = () => {
                 <button className="bg-primary slide-text px-4 py-2 w-36 mr-auto rounded-sm mt-4 text-primaryText text-sm font-semibold">
                   Call to Order
                 </button>
-              </div>
+              </motion.div>
 
-              <div className="w-full md:w-[50%] overflow-hidden random_slide_image">
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1.5, delay: 1 }}
+                className="w-full md:w-[50%] overflow-hidden random_slide_image"
+              >
                 <Image
                   src={slideThreeProduct}
                   alt="Royal Melbourne Hospital"
@@ -153,7 +169,7 @@ const RandomPositionSlider = () => {
                   height="100%"
                   className="py-1 w-[85%]"
                 />
-              </div>
+              </motion.div>
             </div>
           </div>
         </SwiperSlide>

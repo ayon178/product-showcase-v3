@@ -13,7 +13,7 @@ import iconFour from '../../assets/market/icon_4.png'
 
 const MarketV2 = () => {
   return (
-    <div className="bg-yellow-500 my-56 h-[580px] lg:flex gap-8 justify-between container mx-auto px-8">
+    <div className="bg-yellow-500 my-56 h-[480px] lg:flex gap-8 justify-between container mx-auto px-8">
       <div className="py-8 mb-24 lg:mb-0 pt-20">
         <h1 className="text-primaryText text-4xl font-extrabold border-b-4 border-slate-800 pb-2 w-fit">
           Our Market Sectors
@@ -28,8 +28,8 @@ const MarketV2 = () => {
             <Image
               src={marketImageOne}
               alt="Market Image"
-              width={300}
-              height={300}
+              width={200}
+              height={200}
             />
             <div className="flex gap-2 absolute bottom-4 justify-center left-0 right-0 font-medium">
               <h1>Auto Space Services &nbsp; &nbsp;|</h1>
@@ -40,8 +40,8 @@ const MarketV2 = () => {
             <Image
               src={marketImageTwo}
               alt="Market Image"
-              width={400}
-              height={300}
+              width={300}
+              height={200}
             />
             <div className="flex gap-2 absolute bottom-8 md:bottom-5 justify-center left-0 right-0 font-medium">
               <h1>Auto Space Services &nbsp; &nbsp;|</h1>
@@ -54,8 +54,8 @@ const MarketV2 = () => {
             <Image
               src={marketImageThree}
               alt="Market Image"
-              width={400}
-              height={300}
+              width={300}
+              height={200}
             />
             <div className="flex gap-2 absolute bottom-4 justify-center left-0 right-0 font-medium">
               <h1>Auto Space Services &nbsp; &nbsp;|</h1>
@@ -71,8 +71,8 @@ const MarketV2 = () => {
             <Image
               src={marketImageFour}
               alt="Market Image"
-              width={300}
-              height={300}
+              width={200}
+              height={200}
             />
             <div className="flex gap-2 absolute bottom-[43%] justify-center left-0 right-0 font-medium">
               <h1>Auto Space Services &nbsp; &nbsp;|</h1>

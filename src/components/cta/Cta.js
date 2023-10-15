@@ -1,11 +1,11 @@
 'use client'
 
 import React from 'react'
-import {IoMdCall} from 'react-icons/io'
+import { IoMdCall } from 'react-icons/io'
 
 const Cta = () => {
   return (
-    <div className="container left_top_right_bottom_radius_big mx-auto cta_bg mb-8 flex items-start px-20 py-32 justify-center flex-col">
+    <div className="container left_top_right_bottom_radius_big mx-auto cta_bg flex items-start px-20 py-32 justify-center flex-col h-screen">
       <h1 className="text-3xl font-bold">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
         <br /> Corporis nam illo totam iure nobis unde!

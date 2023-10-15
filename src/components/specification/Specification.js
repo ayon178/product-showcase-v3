@@ -33,12 +33,12 @@ const iconData = [
 const Specification = () => {
   return (
     <>
-      <div className="container mx-auto mt-16 specification_bg py-10">
-        <h1 className="text-primaryText text-xl md:text-2xl text-center font-semibold w-fit mx-auto border-b-2 border-primary pb-2">
-          Product Specification
-        </h1>
+      <h1 className="text-primaryText mt-16 mb-5 text-xl md:text-2xl text-center font-semibold w-fit mx-auto border-b-2 border-primary pb-2">
+        Product Specification
+      </h1>
+      <div className="container mx-auto  specification_bg py-10">
         <div className="md:flex justify-between items-center">
-          <div className="flex items-center">
+          <div className="flex items-center relative">
             <Image
               src={productOne}
               alt="product one"
@@ -46,6 +46,16 @@ const Specification = () => {
               height={500}
               className="mx-auto"
             />
+            <div className="absolute top-0 right-[-20%]">
+              <h1 className="text-xl font-semibold text-primaryText mb-2">
+                IR Scanning / Thermography
+              </h1>
+              <p className="text-slate-700">
+                Thermal images diagnose the Electrical Machinery
+                <br />
+                and their current conditions
+              </p>
+            </div>
             <div className="-ml-28">
               {iconData.map((data, index) => (
                 <div
@@ -61,14 +71,7 @@ const Specification = () => {
             </div>
           </div>
           <div>
-            <h1 className="text-primaryText text-2xl md:text-3xl text-center md:text-right mt-5 mb-3 font-semibold">
-              IR Scanning / Thermography
-            </h1>
-            <p className="text-center md:text-right text-slate-800">
-              Thermal images diagnose the Electrical Machinery
-              <br />
-              and their current conditions
-            </p>
+            
             <Image
               src={imageOne}
               alt="image one"
@@ -81,7 +84,7 @@ const Specification = () => {
       </div>
 
       {/* Bottom section */}
-      <div className="container mx-auto md:flex justify-between items-center mt-8">
+      <div className="container mx-auto md:flex justify-between items-center mt-8 secondaryBg">
         <div className="flex items-center relative">
           <Image
             src={productThree}
@@ -90,7 +93,7 @@ const Specification = () => {
             height={500}
             className="mx-auto"
           />
-          <div className="absolute top-0 right-[-12%]">
+          <div className="absolute top-10 right-[-12%]">
             <h1 className="text-xl font-semibold text-primaryText mb-2">
               Air Leak Prevention
             </h1>
@@ -122,7 +125,7 @@ const Specification = () => {
             height={500}
             className="mx-auto"
           />
-          <div className="absolute top-0 right-[-12%]">
+          <div className="absolute top-10 right-[-12%]">
             <h1 className="text-xl font-semibold text-primaryText mb-2">
               Air Flow Meter
             </h1>

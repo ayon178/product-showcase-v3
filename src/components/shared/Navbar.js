@@ -54,7 +54,7 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className="bg-transparent mt-4 z-50 px-2 sticky top-0 mb-[-4rem] w-screen"
+      className="bg-primary py-4 z-50 px-2 sticky top-5 mb-[-4rem] container mx-auto"
     >
       <div className="z-50 container  px-4 md:px-10 py-0 mx-auto flex flex-row justify-between">
         <Link
