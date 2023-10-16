@@ -57,11 +57,13 @@ const Benefit = () => {
           height={500}
         />
         <div className="-ml-7">
-          <p className="text-primaryText">
-            Air leak detector & digital air flow meter
+          <p className="text-primaryText text-center">
+            Air leak detector <br />& digital air flow meter
           </p>
-          <h1 className="text-primaryText text-xl font-semibold mb-4">
-            How air leak detection works
+          <h1 className="text-primaryText mt-2 text-xl text-center font-semibold mb-4">
+            How
+            <br /> air leak detection <br />
+            works
           </h1>
           <p className="text-gray-700 text-sm text-justify ">
             One of the most expensive commodities in any industry is Compressed

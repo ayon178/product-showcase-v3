@@ -5,7 +5,7 @@ import { IoMdCall } from 'react-icons/io'
 
 const Cta = () => {
   return (
-    <div className="container-fluid mx-auto cta_bg flex items-start px-20 py-32 justify-center flex-col h-screen">
+    <div className="container-fluid mx-auto cta_bg flex items-center px-20 py-32 pb-10 justify-end flex-col h-screen">
       <h1 className="text-3xl font-bold">
         To learn more about our solutions,
         <br /> you are free to call us for details

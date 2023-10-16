@@ -85,7 +85,7 @@ const Specification = () => {
               height={500}
               className="mx-auto "
             />
-            <div className="absolute top-14 right-[-1%]">
+            <div className="absolute top-[5rem] right-[-5%]">
               <h1 className="text-xl font-semibold text-primaryText mb-2">
                 IR Scanning / Thermography
               </h1>
@@ -129,9 +129,9 @@ const Specification = () => {
             height={500}
             className="mx-auto"
           />
-          <div className="absolute top-[18%] right-[12%]">
+          <div className="absolute top-[18%] right-[5%]">
             <h1 className="text-xl font-semibold text-primaryText mb-2">
-              Air Leak Detector
+              Digital Air Leak Detector
             </h1>
             {/* <p className="text-slate-700">
               Air flow calculation will detect any <br /> Leakage or Damage in
@@ -161,9 +161,9 @@ const Specification = () => {
             height={500}
             className="mx-auto"
           />
-          <div className="absolute top-[18%] right-[3%]">
+          <div className="absolute top-[18%] right-[14%]">
             <h1 className="text-xl font-semibold text-primaryText mb-2">
-              Digital Air Flow Meter
+              Air Flow Meter
             </h1>
             {/* <p className="text-slate-700">
               Air flow calculation will detect any <br /> Leakage or Damage in
