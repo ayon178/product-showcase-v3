@@ -45,7 +45,7 @@ const Specification = () => {
               alt="product one"
               width={500}
               height={500}
-              className="mx-auto"
+              className="mx-auto "
             />
             <div className="absolute top-3 right-[-15%]">
               <h1 className="text-xl font-semibold text-primaryText mb-2">
@@ -71,6 +71,7 @@ const Specification = () => {
               ))}
             </div>
           </div>
+
           <div className="w-[50%] -mr-20">
             <h1 className="text-center text-xl font-semibold text-primaryText mb-2">
               View inspection video
@@ -78,6 +79,14 @@ const Specification = () => {
             <VideoPlayer videoId="t1pp671qy0g" />
           </div>
         </div>
+        <p className="w-1/2 text-justify text-[12px]">
+          Data Logging Facility - Showing the Flow Rate, Temperature of
+          Compressed Air & Total Air Consumption (Volume) Various Line Sizes -
+          Instruments are available for 1/2 to 10&quot; Line Size for various
+          air capacity, Leak Quantity - Precise quantity of Leak when measured
+          during M/C IDLE TIME Air Sensor - Proven Air Sensor with ease of
+          operation
+        </p>
       </div>
 
       {/* Bottom section */}
@@ -124,7 +133,7 @@ const Specification = () => {
           />
           <div className="absolute top-10 right-[-12%]">
             <h1 className="text-xl font-semibold text-primaryText mb-2">
-              Air Flow Meter
+              Digital Air Flow Meter
             </h1>
             <p className="text-slate-700">
               Air flow calculation will detect any <br /> Leakage or Damage in

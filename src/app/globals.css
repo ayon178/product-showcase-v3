@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 html {
   overflow-x: hidden !important;
   scroll-behavior: smooth !important;
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
 }
 
 /* Common */
@@ -76,10 +82,18 @@ html {
 }
 
 /* Random slider */
+.overflow_hidden {
+  width: 100vw;
+  max-width: 100vw;
+  height: calc(100vh + 0.2rem);
+  max-height: calc(100vh + 0.2rem);
+  overflow: hidden !important;
+}
 .slider_container_random_slider {
   width: 100vw;
   max-width: 100vw;
   height: calc(100vh + 0.2rem);
+  max-height: calc(100vh + 0.2rem);
   background-image: url('../assets/slider/slider_bg_3.png');
   background-size: cover;
   background-position: center;
@@ -92,7 +106,7 @@ html {
   /* lower the opacity */
   opacity: 0.6 !important;
   position: absolute;
-  top: 0;
+  top: 15%;
   right: 0;
 }
 
@@ -166,4 +180,12 @@ html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.image-with-shadow {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.real_shadow {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }

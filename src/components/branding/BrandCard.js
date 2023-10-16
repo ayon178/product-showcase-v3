@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const BrandCard = ({ data }) => {
   return (
-    <div className="shadow border border-gray-200 rounded-lg py-6 px-4 w-44">
+    <div className=" border border-gray-200 rounded-lg shadow-lg py-6 px-4 w-44">
       <div className="flex items-center justify-center">
         {/* <data.icon className="text-4xl text-primaryText" /> */}
         <Image src={data.icon} alt="icon" width={30} height={30} />

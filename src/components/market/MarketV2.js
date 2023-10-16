@@ -13,7 +13,7 @@ import iconFour from '../../assets/market/icon_4.png'
 
 const MarketV2 = () => {
   return (
-    <div className="bg-yellow-300 my-56 h-[480px] lg:flex gap-8 justify-evenly container mx-auto px-8">
+    <div className="real_shadow bg-yellow-300 my-56 h-[480px] lg:flex gap-8 justify-evenly container mx-auto px-8">
       <div className="py-8 mb-24 lg:mb-0 pt-20 w-[50%]">
         <h1 className="text-primaryText text-4xl font-extrabold border-b-4 border-slate-800 pb-2 w-fit">
           Suitable for Multi Industrial Uses
@@ -35,10 +35,11 @@ const MarketV2 = () => {
             <Image
               src={marketImageOne}
               alt="Market Image"
-              width={200}
-              height={200}
+              width={250}
+              height={250}
+              className="real_shadow"
             />
-            <div className="flex gap-2 absolute bottom-2 justify-center left-0 right-0 font-medium">
+            <div className="flex gap-2 absolute bottom-4 justify-center left-0 right-0 font-medium">
               <h1 className="text-sm font-semibold">
                 Cement Industry &nbsp; &nbsp;|
               </h1>
@@ -51,8 +52,9 @@ const MarketV2 = () => {
               alt="Market Image"
               width={300}
               height={200}
+              className="real_shadow"
             />
-            <div className="flex gap-2 absolute bottom-4 justify-center left-0 right-0 font-medium">
+            <div className="flex gap-2 absolute bottom-[18%] justify-center left-0 right-0 font-medium">
               <h1 className="text-sm font-semibold">
                 Textile Industry &nbsp; &nbsp;|
               </h1>
@@ -67,6 +69,7 @@ const MarketV2 = () => {
               alt="Market Image"
               width={300}
               height={200}
+              className="real_shadow"
             />
             <div className="flex gap-2 absolute bottom-4 justify-center left-0 right-0 font-medium">
               <h1 className="text-sm font-semibold">
@@ -84,10 +87,11 @@ const MarketV2 = () => {
             <Image
               src={marketImageFour}
               alt="Market Image"
-              width={200}
-              height={200}
+              width={250}
+              height={250}
+              className="real_shadow"
             />
-            <div className="flex gap-2 absolute bottom-[51%] justify-center left-0 right-0 font-medium">
+            <div className="flex gap-2 absolute bottom-[40%] justify-center left-0 right-0 font-medium">
               <h1 className="text-sm font-semibold">
                 Automotive Industry &nbsp; &nbsp;|
               </h1>

@@ -51,13 +51,14 @@ const RandomPositionSlider = () => {
         // Use GSAP to animate the image
         gsap.to(sliderContainer, {
           opacity: 0,
-          scale: 1.2,
+          scale: 1,
+          transformOrigin: 'center center',
           duration: 0.5,
           onComplete: () => {
             // Restore the opacity after animation (optional)
             gsap.to(sliderContainer, {
               opacity: 1,
-              scale: 1,
+              scale: 1.07,
               duration: 0.5,
             })
           },
@@ -109,7 +110,7 @@ const RandomPositionSlider = () => {
   }, [slideOneBg, slideTwoBg, slideThreeBg])
 
   return (
-    <div className="overflow-hidden w-screen -mt-20">
+    <div className="overflow_hidden w-screen">
       <Swiper
         effect="fade"
         ref={swiperRef}
@@ -124,7 +125,7 @@ const RandomPositionSlider = () => {
         }}
         navigation={false}
         modules={[Autoplay, Pagination]}
-        className="mySwiper  relative h-screen w-screen z-10"
+        className="mySwiper relative h-screen w-screen z-10 "
       >
         <motion.div
           initial={{ opacity: 0 }}
@@ -145,11 +146,11 @@ const RandomPositionSlider = () => {
                 <h1 className="slide-header-right text-primaryText text-2xl md:text-5xl text-center md:text-left slide-header font-extrabold">
                   Thermography
                 </h1>
-                <p className="text-primaryText slide-text mt-10 font-semibold text-center md:text-left slide-text text-[.9rem] w-full mr-auto md:w-3/4">
+                <p className="text-primaryText slide-text mt-10 font-medium text-center md:text-left slide-text text-[1.4rem] w-full mr-auto md:w-3/4">
                   to assess the condition of your Compressors & Electrical
                   Machineries
                 </p>
-                <button className="bg-primary slide-text px-4 py-2 w-36 mr-auto rounded-sm mt-4 text-primaryText text-sm font-semibold">
+                <button className="bg-primary slide-text px-4 py-2 w-36 mr-auto rounded-sm mt-4 text-primaryText text-md font-semibold">
                   Call to Order
                 </button>
               </motion.div>
@@ -188,10 +189,10 @@ const RandomPositionSlider = () => {
                 <h1 className="slide-header-left text-primaryText text-2xl md:text-5xl text-center md:text-right slide-header font-extrabold">
                   Digital Air Leak Detector
                 </h1>
-                <p className="slide-text text-primaryText mt-10 font-semibold text-center md:text-right slide-text text-[.9rem] w-full ml-auto md:w-3/4">
+                <p className="slide-text text-primaryText mt-10 font-medium text-center md:text-right slide-text text-[1.4rem] w-full ml-auto md:w-3/4">
                   to accurately locate the leaks in your production system
                 </p>
-                <button className="bg-primary slide-text px-4 py-2 w-36 mr-auto md:mr-0 ml-auto rounded-sm mt-4 text-primaryText text-sm font-semibold">
+                <button className="bg-primary slide-text px-4 py-2 w-36 mr-auto md:mr-0 ml-auto rounded-sm mt-4 text-primaryText text-md font-semibold">
                   Call to Order
                 </button>
               </div>
@@ -206,10 +207,10 @@ const RandomPositionSlider = () => {
                 <h1 className="slide-header-right text-primaryText text-2xl md:text-5xl text-center md:text-left slide-header font-extrabold">
                   Air Flow Meter
                 </h1>
-                <p className="text-primaryText slide-text mt-10 font-semibold text-center md:text-left slide-text text-[.9rem] w-full mr-auto md:w-3/4">
+                <p className="text-primaryText slide-text mt-10 font-medium text-center md:text-left slide-text text-[1.4rem] w-full mr-auto md:w-3/4">
                   to quantify the Air Leaks in your compressed air flow
                 </p>
-                <button className="bg-primary slide-text px-4 py-2 w-36 mr-auto rounded-sm mt-4 text-primaryText text-sm font-semibold">
+                <button className="bg-primary slide-text px-4 py-2 w-36 mr-auto rounded-sm mt-4 text-primaryText text-md font-semibold">
                   Call to Order
                 </button>
               </div>

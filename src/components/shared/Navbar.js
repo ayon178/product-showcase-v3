@@ -54,7 +54,7 @@ const Navbar = () => {
   return (
     <div
       id="navbar"
-      className="bg-primary py-4 z-50 px-2 sticky top-5 mb-[-4rem] container mx-auto"
+      className="bg-primary py-2 z-50 px-2 sticky top-5 mb-[-4rem] container mx-auto"
     >
       <div className="z-50 container  px-4 md:px-10 py-0 mx-auto flex flex-row justify-between">
         <Link
@@ -66,11 +66,12 @@ const Navbar = () => {
             alt="Royal Melbourne Hospital"
             width={50}
             height={50}
+            className="image-with-shadow"
           />
 
           {/* <h1>LOGO</h1> */}
         </Link>
-        <ul className="text_color flex-row items-center gap-9 text-sm font-semibold text-primaryText hidden md:flex">
+        <ul className="text_color flex-row items-center gap-9 text-md font-semibold text-primaryText hidden md:flex">
           <li>
             <Link
               href="/#"

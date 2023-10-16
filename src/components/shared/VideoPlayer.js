@@ -9,12 +9,12 @@ const VideoPlayer = ({ videoId }) => {
   }
 
   return (
-    <div className="relative">
+    <div className="relative ">
       <div className="flex justify-center items-center w-full h-full">
         <img
           src={thumb.src}
           alt="Video Thumbnail"
-          className="w-[85%] h-auto cursor-pointer"
+          className="w-[85%] h-auto cursor-pointer real_shadow"
           onClick={playVideo}
         />
         {playing && (
