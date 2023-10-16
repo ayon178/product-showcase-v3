@@ -134,7 +134,9 @@ const RandomPositionSlider = () => {
           className="slider_container_random_slider"
         ></motion.div>
         <SwiperSlide className="slide-2">
-          <div className={` relative h-full flex items-center justify-center`}>
+          <div
+            className={` relative h-full flex items-center justify-center px-10`}
+          >
             <div className="mt-5 md:flex container mx-auto ps-5 md:ps-10 items-center justify-between">
               {/* Text container */}
               <motion.div
@@ -173,7 +175,9 @@ const RandomPositionSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="slide-0">
-          <div className={`relative h-full flex items-center justify-center`}>
+          <div
+            className={`relative h-full flex items-center justify-center px-10`}
+          >
             <div className="mt-5 md:flex container mx-auto ps-5 md:ps-10 items-center justify-between">
               <div className="w-full mt-14 md:w-[40%] overflow-hidden random_slide_image">
                 <Image
@@ -200,7 +204,9 @@ const RandomPositionSlider = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="slide-1">
-          <div className={` relative h-full flex items-center justify-center`}>
+          <div
+            className={` relative h-full flex items-center justify-center px-10`}
+          >
             <div className="mt-5 md:flex container mx-auto ps-5 md:ps-10 items-center justify-between">
               {/* Text container */}
               <div className="w-full md:w-[50%] mt-10 md:mt-0 flex flex-col justify-start pr-0 md:pr-10">

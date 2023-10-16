@@ -19,7 +19,7 @@ const Benefit = () => {
         We are offering cost saving modern equipment that are used
         <br /> worldwide for Textile Mill Maintenance
       </p>
-      <div className="md:flex mx-auto gap-4 real_shadow justify-around items-center bg-primary mt-8 px-8 left_top_right_bottom_radius_big">
+      <div className="md:flex mx-auto gap-4 real_shadow justify-around items-center bg-primary mt-8 px-14 left_top_right_bottom_radius_big">
         <div className="w-[40%]">
           <Image
             src={benifitProductOne.src}
@@ -49,7 +49,7 @@ const Benefit = () => {
           />
         </div>
       </div>
-      <div className="md:flex mx-auto gap-4 real_shadow justify-around items-center bg-primary mt-8 px-8 left_top_right_bottom_radius_big mb-8">
+      <div className="md:flex mx-auto gap-4 real_shadow justify-around items-center bg-primary mt-8  left_top_right_bottom_radius_big mb-8 px-14">
         <Image
           src={benifitTextImage.src}
           alt="benifit product one"

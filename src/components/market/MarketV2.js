@@ -13,7 +13,7 @@ import iconFour from '../../assets/market/icon_4.png'
 
 const MarketV2 = () => {
   return (
-    <div className="real_shadow bg-yellow-300 my-56 h-[480px] lg:flex gap-8 justify-evenly container mx-auto px-8">
+    <div className="real_shadow bg-yellow-300 my-56 h-[480px] lg:flex gap-8 justify-evenly container mx-auto px-14">
       <div className="py-8 mb-24 lg:mb-0 pt-20 w-[50%]">
         <h1
           style={{ lineHeight: 1.5 }}
