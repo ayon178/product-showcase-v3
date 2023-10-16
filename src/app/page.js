@@ -23,57 +23,64 @@ export default function Home() {
       : null
 
   useEffect(() => {
-    const navbar = document.querySelector('#navbar')
-    const text = document.querySelectorAll('.text_color')
-    const timeline = gsap.timeline({ paused: true })
-
-    // Define a function to handle the scroll event
-    function handleScroll() {
-      const scrollThreshold = 0 // Adjust this value as needed
-      if (window.scrollY > scrollThreshold) {
-        navbar.classList.remove('container')
-      } else {
-        navbar.classList.add('container')
+    if (typeof window !== 'undefined') {
+      if (!token) {
+        window.location.href = '/login'
+        return null
       }
-    }
 
-    // Attach the scroll event listener
-    window.addEventListener('scroll', handleScroll)
+      const navbar = document.querySelector('#navbar')
+      const text = document.querySelectorAll('.text_color')
+      const timeline = gsap.timeline({ paused: true })
 
-    timeline.to(navbar, {
-      // backgroundColor: 'red',
-      backdropFilter: 'blur(10px)',
-      duration: 0.1,
-      ease: 'power3.inOut',
-      backgroundColor: 'rgba(0, 0, 0, 0.5)',
-      marginTop: 0,
-      paddingBottom: '1rem',
-      paddingTop: '1rem',
-      top: 0,
-    })
-
-    timeline.to(text, {
-      color: '#fff',
-      ease: 'power3.inOut',
-    })
-
-    setLoadingStartTime(performance.now())
-    setTimeout(() => {
-      setIsLoading(false)
-    }, 1000)
-
-    const scrollListener = () => {
-      if (window.scrollY === 0) {
-        timeline.reverse()
-      } else {
-        timeline.play()
+      // Define a function to handle the scroll event
+      function handleScroll() {
+        const scrollThreshold = 0 // Adjust this value as needed
+        if (window.scrollY > scrollThreshold) {
+          navbar.classList.remove('container')
+        } else {
+          navbar.classList.add('container')
+        }
       }
-    }
 
-    window.addEventListener('scroll', scrollListener)
+      // Attach the scroll event listener
+      window.addEventListener('scroll', handleScroll)
 
-    return () => {
-      window.removeEventListener('scroll', scrollListener)
+      timeline.to(navbar, {
+        // backgroundColor: 'red',
+        backdropFilter: 'blur(10px)',
+        duration: 0.1,
+        ease: 'power3.inOut',
+        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+        marginTop: 0,
+        paddingBottom: '1rem',
+        paddingTop: '1rem',
+        top: 0,
+      })
+
+      timeline.to(text, {
+        color: '#fff',
+        ease: 'power3.inOut',
+      })
+
+      setLoadingStartTime(performance.now())
+      setTimeout(() => {
+        setIsLoading(false)
+      }, 1000)
+
+      const scrollListener = () => {
+        if (window.scrollY === 0) {
+          timeline.reverse()
+        } else {
+          timeline.play()
+        }
+      }
+
+      window.addEventListener('scroll', scrollListener)
+
+      return () => {
+        window.removeEventListener('scroll', scrollListener)
+      }
     }
   }, [])
 
@@ -84,12 +91,6 @@ export default function Home() {
       console.log(`Loading time: ${loadingTime} ms`)
     }
   }, [isLoading, loadingStartTime])
-
-  if (!token) {
-    if (typeof window !== 'undefined') {
-      window.location.href = '/login'
-    }
-  }
 
   return (
     <>

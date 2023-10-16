@@ -85,15 +85,15 @@ const Specification = () => {
               height={500}
               className="mx-auto "
             />
-            <div className="absolute top-3 right-[-15%]">
+            <div className="absolute top-14 right-[-1%]">
               <h1 className="text-xl font-semibold text-primaryText mb-2">
                 IR Scanning / Thermography
               </h1>
-              <p className="text-slate-700">
+              {/* <p className="text-slate-700">
                 Thermal images diagnose the Electrical Machinery
                 <br />
                 and their current conditions
-              </p>
+              </p> */}
             </div>
             <div className="-ml-32">
               {topPartData.map((data, index) => (
@@ -117,14 +117,6 @@ const Specification = () => {
             <VideoPlayer videoId="t1pp671qy0g" />
           </div>
         </div>
-        <p className="w-1/2 text-justify text-[12px]">
-          Data Logging Facility - Showing the Flow Rate, Temperature of
-          Compressed Air & Total Air Consumption (Volume) Various Line Sizes -
-          Instruments are available for 1/2 to 10&quot; Line Size for various
-          air capacity, Leak Quantity - Precise quantity of Leak when measured
-          during M/C IDLE TIME Air Sensor - Proven Air Sensor with ease of
-          operation
-        </p>
       </div>
 
       {/* Bottom section */}
@@ -137,14 +129,14 @@ const Specification = () => {
             height={500}
             className="mx-auto"
           />
-          <div className="absolute top-10 right-[-12%]">
+          <div className="absolute top-[18%] right-[12%]">
             <h1 className="text-xl font-semibold text-primaryText mb-2">
-              Air Leak Prevention
+              Air Leak Detector
             </h1>
-            <p className="text-slate-700">
+            {/* <p className="text-slate-700">
               Air flow calculation will detect any <br /> Leakage or Damage in
               Compressed air
-            </p>
+            </p> */}
           </div>
           <div className="-ml-28">
             {leftPartData.map((data, index) => (
@@ -169,14 +161,14 @@ const Specification = () => {
             height={500}
             className="mx-auto"
           />
-          <div className="absolute top-10 right-[-12%]">
+          <div className="absolute top-[18%] right-[3%]">
             <h1 className="text-xl font-semibold text-primaryText mb-2">
               Digital Air Flow Meter
             </h1>
-            <p className="text-slate-700">
+            {/* <p className="text-slate-700">
               Air flow calculation will detect any <br /> Leakage or Damage in
               Compressed air
-            </p>
+            </p> */}
           </div>
           <div className="-ml-28">
             {iconData.map((data, index) => (

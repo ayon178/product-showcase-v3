@@ -182,6 +182,13 @@ body {
   background-repeat: no-repeat;
 }
 
+.login_main_bg {
+  background-color: #fff;
+  backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  border: 1px solid #9ca3af !important;
+}
+
 .image-with-shadow {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }

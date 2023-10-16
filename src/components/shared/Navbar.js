@@ -78,7 +78,7 @@ const Navbar = () => {
               onMouseEnter={handleMenuItemHover}
               onMouseLeave={handleMenuItemLeave}
             >
-              Home
+              Menu 1
             </Link>
           </li>
           <li>
@@ -87,7 +87,7 @@ const Navbar = () => {
               onMouseEnter={handleMenuItemHover}
               onMouseLeave={handleMenuItemLeave}
             >
-              About
+              Menu 2
             </Link>
           </li>
           <li>
@@ -96,7 +96,7 @@ const Navbar = () => {
               onMouseEnter={handleMenuItemHover}
               onMouseLeave={handleMenuItemLeave}
             >
-              Categories
+              Menu 3
             </Link>
           </li>
           <li>
@@ -105,7 +105,7 @@ const Navbar = () => {
               onMouseEnter={handleMenuItemHover}
               onMouseLeave={handleMenuItemLeave}
             >
-              Services
+              Menu 4
             </Link>
           </li>
           <li>
@@ -114,7 +114,7 @@ const Navbar = () => {
               onMouseEnter={handleMenuItemHover}
               onMouseLeave={handleMenuItemLeave}
             >
-              Portfolio
+              Menu 5
             </Link>
           </li>
           <li>
@@ -123,7 +123,7 @@ const Navbar = () => {
               onMouseEnter={handleMenuItemHover}
               onMouseLeave={handleMenuItemLeave}
             >
-              Gallery
+              Menu 6
             </Link>
           </li>
           <li>
@@ -132,7 +132,7 @@ const Navbar = () => {
               onMouseEnter={handleMenuItemHover}
               onMouseLeave={handleMenuItemLeave}
             >
-              Contact
+              Menu 7
             </Link>
           </li>
         </ul>

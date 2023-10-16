@@ -59,7 +59,7 @@ const RandomPositionSlider = () => {
             gsap.to(sliderContainer, {
               opacity: 1,
               scale: 1.07,
-              duration: 0.5,
+              duration: 0.3,
             })
           },
         })
@@ -74,7 +74,7 @@ const RandomPositionSlider = () => {
               opacity: 0,
               scale: 0.8,
               transformOrigin: 'center center',
-              delay: 0.5,
+              delay: 1,
               duration: 2,
             },
             {
@@ -92,18 +92,18 @@ const RandomPositionSlider = () => {
         gsap.fromTo(
           `.slide-header-right`,
           { opacity: 0, x: -100 },
-          { opacity: 1, x: 0, duration: 1, delay: 0.7, ease: Power2.easeInOut }
+          { opacity: 1, x: 0, duration: 1, delay: 1, ease: Power2.easeInOut }
         )
         gsap.fromTo(
           `.slide-header-left`,
           { opacity: 0, x: 100 },
-          { opacity: 1, x: 0, duration: 1, delay: 0.7, ease: Power2.easeInOut }
+          { opacity: 1, x: 0, duration: 1, delay: 1, ease: Power2.easeInOut }
         )
         // Run GSAP animation for the slider paragraph text (fade up)
         gsap.fromTo(
           `.slide-text`,
           { opacity: 0, y: 100 },
-          { opacity: 1, y: 0, duration: 1, delay: 0.7, ease: Power2.easeInOut }
+          { opacity: 1, y: 0, duration: 1, delay: 1, ease: Power2.easeInOut }
         )
       })
     }
