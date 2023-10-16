@@ -12,6 +12,44 @@ import iconThree from '../../assets/spec/icon_3.png'
 import iconFour from '../../assets/spec/icon_4.png'
 import VideoPlayer from '../shared/VideoPlayer'
 
+const topPartData = [
+  {
+    icon: iconOne,
+    title: 'Thermal Imaging ',
+  },
+  {
+    icon: iconTwo,
+    title: 'Electrical Trouble Shooting',
+  },
+  {
+    icon: iconThree,
+    title: 'HVAC Application',
+  },
+  {
+    icon: iconFour,
+    title: 'Complete CBM',
+  },
+]
+
+const leftPartData = [
+  {
+    icon: iconOne,
+    title: 'Locating Micro Leaks',
+  },
+  {
+    icon: iconTwo,
+    title: 'ULTRASONIC Technology',
+  },
+  {
+    icon: iconThree,
+    title: 'Immediate Detection',
+  },
+  {
+    icon: iconFour,
+    title: 'Precise Location of Air Leak',
+  },
+]
+
 const iconData = [
   {
     icon: iconOne,
@@ -58,13 +96,13 @@ const Specification = () => {
               </p>
             </div>
             <div className="-ml-32">
-              {iconData.map((data, index) => (
+              {topPartData.map((data, index) => (
                 <div
                   key={index}
                   className="flex items-center bg-[#FEE03B] py-2 pr-10 left_top_right_bottom_radius_big my-2"
                 >
                   <Image src={data.icon} alt="icon" width={20} height={20} />{' '}
-                  <h1 className=" font-semibold ">
+                  <h1 className=" font-semibold no_wrap">
                     &nbsp;&nbsp;| &nbsp;&nbsp;{data.title}
                   </h1>
                 </div>
@@ -109,13 +147,13 @@ const Specification = () => {
             </p>
           </div>
           <div className="-ml-28">
-            {iconData.map((data, index) => (
+            {leftPartData.map((data, index) => (
               <div
                 key={index}
                 className="flex items-center bg-[#FEE03B] py-2 pr-10 left_top_right_bottom_radius_big my-2"
               >
                 <Image src={data.icon} alt="icon" width={20} height={20} />{' '}
-                <h1 className=" font-semibold ">
+                <h1 className=" font-semibold no_wrap">
                   &nbsp;&nbsp;| &nbsp;&nbsp;{data.title}
                 </h1>
               </div>
@@ -147,7 +185,7 @@ const Specification = () => {
                 className="flex items-center bg-[#FEE03B] py-2 pr-10 left_top_right_bottom_radius_big my-2"
               >
                 <Image src={data.icon} alt="icon" width={20} height={20} />{' '}
-                <h1 className=" font-semibold ">
+                <h1 className=" font-semibold no_wrap">
                   &nbsp;&nbsp;| &nbsp;&nbsp;{data.title}
                 </h1>
               </div>
