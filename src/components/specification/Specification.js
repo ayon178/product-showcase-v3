@@ -15,19 +15,19 @@ import VideoPlayer from '../shared/VideoPlayer'
 const iconData = [
   {
     icon: iconOne,
-    title: 'Thermal Imaging',
+    title: 'Data Logging Facility ',
   },
   {
     icon: iconTwo,
-    title: 'Manually Usable',
+    title: 'Various Line Sizes',
   },
   {
     icon: iconThree,
-    title: 'Status Check',
+    title: 'Leak Quantity ',
   },
   {
     icon: iconFour,
-    title: 'Easy Maintenance',
+    title: 'Air Sensor',
   },
 ]
 
@@ -72,7 +72,9 @@ const Specification = () => {
             </div>
           </div>
           <div className="w-[50%] -mr-20">
-            <h1 className='text-center text-xl font-semibold text-primaryText mb-2'>View inspection video</h1>
+            <h1 className="text-center text-xl font-semibold text-primaryText mb-2">
+              View inspection video
+            </h1>
             <VideoPlayer videoId="t1pp671qy0g" />
           </div>
         </div>

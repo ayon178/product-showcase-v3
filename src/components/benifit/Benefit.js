@@ -29,13 +29,15 @@ const Benefit = () => {
           />
         </div>
         <div className="w-[30%]">
-          <p className="text-primaryText">Lorem ipsum</p>
+          <p className="text-primaryText">Infrared Scanning / Thermography</p>
           <h1 className="text-primaryText text-xl font-semibold mb-4">
-            Lorem ipsum dolor
+            How Thermography works
           </h1>
           <p className="text-gray-700 text-sm text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            explicabo velit quo nam veritatis expedita ab harum unde sit nemo.
+            Thermal images allows the diagnosis of Electrical/Mechanical
+            Machineries by detecting the heated areas, which can not be found
+            with normal eye. This diagnosis of temperature enables to preventive
+            damage of production equipments and saves expensive down time.
           </p>
         </div>
         <div className="w-[40%]">
@@ -54,14 +56,21 @@ const Benefit = () => {
           width={500}
           height={500}
         />
-        <div>
-          <p className="text-primaryText">Lorem ipsum</p>
+        <div className="-ml-7">
+          <p className="text-primaryText">
+            Air leak detector & digital air flow meter
+          </p>
           <h1 className="text-primaryText text-xl font-semibold mb-4">
-            Lorem ipsum dolor
+            How air leak detection works
           </h1>
-          <p className="text-gray-700 text-sm text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            explicabo velit quo nam veritatis expedita ab harum unde sit nemo.
+          <p className="text-gray-700 text-sm text-justify ">
+            One of the most expensive commodities in any industry is Compressed
+            Air. Typical industry can lose 25% to 40% compressor capacity due to
+            Air Leaks. Our solutions of Air Leak Detector & Digital Air Flow
+            Meter can detect and pinpont the position of Air Leaks, as well as
+            present you the proper measurement of Air Leak scenario so that
+            correct maintenance can be done. These solutions can significantly
+            reduce the Compressed Air wastage , as well as save cost & energy.
           </p>
         </div>
         <Image

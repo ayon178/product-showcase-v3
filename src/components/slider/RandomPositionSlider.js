@@ -116,7 +116,7 @@ const RandomPositionSlider = () => {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 4500,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -139,17 +139,15 @@ const RandomPositionSlider = () => {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1.5, delay: .5 }}
+                transition={{ duration: 1.5, delay: 0.5 }}
                 className="w-full md:w-[50%] mt-10 md:mt-0 flex flex-col justify-start pr-0 md:pr-10"
               >
                 <h1 className="slide-header-right text-primaryText text-2xl md:text-5xl text-center md:text-left slide-header font-extrabold">
-                  Text Writeup
+                  Thermography
                 </h1>
                 <p className="text-primaryText slide-text mt-10 font-semibold text-center md:text-left slide-text text-[.9rem] w-full mr-auto md:w-3/4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusantium nemo nihil nobis eveniet ullam, earum dolorem
-                  corporis! Quod unde debitis voluptate cumque cum atque
-                  deleniti, voluptas laboriosam ipsam et aut!
+                  to assess the condition of your Compressors & Electrical
+                  Machineries
                 </p>
                 <button className="bg-primary slide-text px-4 py-2 w-36 mr-auto rounded-sm mt-4 text-primaryText text-sm font-semibold">
                   Call to Order
@@ -159,8 +157,8 @@ const RandomPositionSlider = () => {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1.5, delay: .5 }}
-                className="w-full md:w-[50%] overflow-hidden random_slide_image"
+                transition={{ duration: 1.5, delay: 0.5 }}
+                className="w-full md:w-[40%] overflow-hidden random_slide_image mt-14"
               >
                 <Image
                   src={slideThreeProduct}
@@ -176,7 +174,7 @@ const RandomPositionSlider = () => {
         <SwiperSlide className="slide-0">
           <div className={`relative h-full flex items-center justify-center`}>
             <div className="mt-5 md:flex container mx-auto ps-5 md:ps-10 items-center justify-between">
-              <div className="w-full md:w-[50%] overflow-hidden random_slide_image">
+              <div className="w-full mt-14 md:w-[40%] overflow-hidden random_slide_image">
                 <Image
                   src={slideOneProduct}
                   alt="Royal Melbourne Hospital"
@@ -188,13 +186,10 @@ const RandomPositionSlider = () => {
               {/* Text container */}
               <div className="w-full md:w-[50%] mt-10 md:mt-0 flex flex-col justify-start md:justify-end pr-0 md:pr-10">
                 <h1 className="slide-header-left text-primaryText text-2xl md:text-5xl text-center md:text-right slide-header font-extrabold">
-                  Text Writeup
+                  Digital Air Leak Detector
                 </h1>
                 <p className="slide-text text-primaryText mt-10 font-semibold text-center md:text-right slide-text text-[.9rem] w-full ml-auto md:w-3/4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusantium nemo nihil nobis eveniet ullam, earum dolorem
-                  corporis! Quod unde debitis voluptate cumque cum atque
-                  deleniti, voluptas laboriosam ipsam et aut!
+                  to accurately locate the leaks in your production system
                 </p>
                 <button className="bg-primary slide-text px-4 py-2 w-36 mr-auto md:mr-0 ml-auto rounded-sm mt-4 text-primaryText text-sm font-semibold">
                   Call to Order
@@ -209,20 +204,17 @@ const RandomPositionSlider = () => {
               {/* Text container */}
               <div className="w-full md:w-[50%] mt-10 md:mt-0 flex flex-col justify-start pr-0 md:pr-10">
                 <h1 className="slide-header-right text-primaryText text-2xl md:text-5xl text-center md:text-left slide-header font-extrabold">
-                  Text Writeup
+                  Air Flow Meter
                 </h1>
                 <p className="text-primaryText slide-text mt-10 font-semibold text-center md:text-left slide-text text-[.9rem] w-full mr-auto md:w-3/4">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Accusantium nemo nihil nobis eveniet ullam, earum dolorem
-                  corporis! Quod unde debitis voluptate cumque cum atque
-                  deleniti, voluptas laboriosam ipsam et aut!
+                  to quantify the Air Leaks in your compressed air flow
                 </p>
                 <button className="bg-primary slide-text px-4 py-2 w-36 mr-auto rounded-sm mt-4 text-primaryText text-sm font-semibold">
                   Call to Order
                 </button>
               </div>
 
-              <div className="w-full md:w-[50%] overflow-hidden random_slide_image">
+              <div className="w-full md:w-[45%] overflow-hidden random_slide_image">
                 <Image
                   src={slideTwoProduct}
                   alt="Royal Melbourne Hospital"

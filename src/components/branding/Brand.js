@@ -59,19 +59,18 @@ const Brand = () => {
         Our Branding
       </h1>
       <h1 className="text-center mt-8 mb-4 text-2xl font-semibold text-primaryText">
-        Why Choose Us?
+        RN Agencies
       </h1>
       <h1 className="text-2xl font-semibold text-primaryText bg-primary px-8 rounded-sm py-1 w-fit mx-auto">
-        Cause We Are Qualified
+        We provide Complete Mill Maintenance Solution
       </h1>
       <p className="mx-auto mt-4 text-center w-full sm:w-[80%] md:w-[60%] lg:w-[50%] text-slate-800">
-        &quot;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
-        debitis dolore laudantium, aut, consectetur in sit veniam molestiae
-        libero velit amet ipsam perferendis aliquid fugit! Quasi impedit facilis
-        minima laudantium?&quot;
+        &quot;Right Instruments, Practical Software & Effective Training Module
+        makes our packages not just Insrument Sale, but a Complete Mill
+        Maintenance Solution for your factory.&quot;
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 mt-10">
+      <div className="flex justify-center gap-4 mt-10">
         {brandData.map((data, index) => (
           <BrandCard key={index} data={data} />
         ))}

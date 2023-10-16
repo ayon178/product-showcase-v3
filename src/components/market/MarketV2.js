@@ -13,16 +13,23 @@ import iconFour from '../../assets/market/icon_4.png'
 
 const MarketV2 = () => {
   return (
-    <div className="bg-yellow-500 my-56 h-[480px] lg:flex gap-8 justify-between container mx-auto px-8">
-      <div className="py-8 mb-24 lg:mb-0 pt-20">
+    <div className="bg-yellow-300 my-56 h-[480px] lg:flex gap-8 justify-evenly container mx-auto px-8">
+      <div className="py-8 mb-24 lg:mb-0 pt-20 w-[50%]">
         <h1 className="text-primaryText text-4xl font-extrabold border-b-4 border-slate-800 pb-2 w-fit">
-          Our Market Sectors
+          Suitable for Multi Industrial Uses
         </h1>
-        <p className="mt-4 text-primaryText font-semibold">
-          Since 1964, we provide the best solutions for our valuable customers
+        <p className="mt-4 text-primaryText font-medium text-justify">
+          Our equipments are ideal for Textie Industry, Cement Industry, Steel
+          Industry, Automotive Industry & Power Plants / Chemical Plants. These
+          equipments are also usable in Shopping Malls, Residential &
+          Hospitality Sector, Software Parks etc.
+        </p>
+        <p className="mt-4 text-primaryText font-medium text-justify">
+          These equipments are vital instruments for maintenance of machineries,
+          energy conservation & fire safety.
         </p>
       </div>
-      <div className="-mt-[10px]">
+      <div className="-mt-[10px] w-[50%]">
         <div className="flex gap-4">
           <div className="relative">
             <Image
@@ -32,7 +39,9 @@ const MarketV2 = () => {
               height={200}
             />
             <div className="flex gap-2 absolute bottom-2 justify-center left-0 right-0 font-medium">
-              <h1>Auto Space Services &nbsp; &nbsp;|</h1>
+              <h1 className="text-sm font-semibold">
+                Cement Industry &nbsp; &nbsp;|
+              </h1>
               <Image src={iconOne} alt="Market Image" width={20} height={20} />
             </div>
           </div>
@@ -44,7 +53,9 @@ const MarketV2 = () => {
               height={200}
             />
             <div className="flex gap-2 absolute bottom-4 justify-center left-0 right-0 font-medium">
-              <h1>Auto Space Services &nbsp; &nbsp;|</h1>
+              <h1 className="text-sm font-semibold">
+                Textile Industry &nbsp; &nbsp;|
+              </h1>
               <Image src={iconTwo} alt="Market Image" width={20} height={20} />
             </div>
           </div>
@@ -58,7 +69,9 @@ const MarketV2 = () => {
               height={200}
             />
             <div className="flex gap-2 absolute bottom-4 justify-center left-0 right-0 font-medium">
-              <h1>Auto Space Services &nbsp; &nbsp;|</h1>
+              <h1 className="text-sm font-semibold">
+                Steel Industry &nbsp; &nbsp;|
+              </h1>
               <Image
                 src={iconThree}
                 alt="Market Image"
@@ -75,7 +88,9 @@ const MarketV2 = () => {
               height={200}
             />
             <div className="flex gap-2 absolute bottom-[51%] justify-center left-0 right-0 font-medium">
-              <h1>Auto Space Services &nbsp; &nbsp;|</h1>
+              <h1 className="text-sm font-semibold">
+                Automotive Industry &nbsp; &nbsp;|
+              </h1>
               <Image src={iconFour} alt="Market Image" width={20} height={20} />
             </div>
           </div>
