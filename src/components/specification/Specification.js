@@ -114,7 +114,7 @@ const Specification = () => {
             <h1 className="text-center text-xl font-semibold text-primaryText mb-2">
               View inspection video
             </h1>
-            <VideoPlayer videoId="t1pp671qy0g" />
+            <VideoPlayer videoId="Zhs1DwQB85c" />
           </div>
         </div>
       </div>
