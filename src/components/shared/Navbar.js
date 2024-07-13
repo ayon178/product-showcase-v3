@@ -61,15 +61,15 @@ const Navbar = () => {
           href="/#"
           className="text_color font-semibold text-2xl text-primaryText flex items-center"
         >
-          <Image
+          {/* <Image
             src={logo}
             alt="Royal Melbourne Hospital"
             width={50}
             height={50}
             className="image-with-shadow"
-          />
+          /> */}
 
-          {/* <h1>LOGO</h1> */}
+          <h1>XYZ</h1>
         </Link>
         <ul className="text_color flex-row items-center gap-9 text-md font-semibold text-primaryText hidden md:flex">
           <li>
